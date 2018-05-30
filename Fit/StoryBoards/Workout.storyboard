@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mPk-au-egV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Workout-->
+        <scene sceneID="KV9-g8-pgF">
+            <objects>
+                <viewController storyboardIdentifier="Workout" title="Workout" id="PjQ-hB-46G" customClass="WorkoutVC" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Msg-F2-eyl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="mainColor"/>
+                        <viewLayoutGuide key="safeArea" id="Lom-qj-6oz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Workout" id="2tE-cj-Kpq">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" image="profile" id="uPy-kd-wSi"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="hIW-2e-nLV"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcs-39-XNr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8" y="-442.12893553223392"/>
+        </scene>
+        <!--Workout-->
+        <scene sceneID="cEa-qi-Zex">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mPk-au-egV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Workout" image="workout_empty" selectedImage="workout_filled" id="eAA-E6-gIG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bj3-fH-Qzs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PjQ-hB-46G" kind="relationship" relationship="rootViewController" id="qk1-hm-Gz7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jn-s8-OEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.6" y="-442.12893553223392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="32" height="32"/>
+        <image name="workout_empty" width="32" height="32"/>
+        <image name="workout_filled" width="32" height="32"/>
+        <namedColor name="mainColor">
+            <color red="0.0" green="0.55400002002716064" blue="0.061000000685453415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
