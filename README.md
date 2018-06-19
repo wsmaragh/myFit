@@ -41,10 +41,8 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 ## Developed by:
 <p align="center">
    <img src = "https://i.imgur.com/J5ctv0K.jpg" width=150>
-  - Winston Maragh | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
 </p>
-
-
+  - Winston Maragh | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
 
 ## Project Manangement (Trello)
 - https://trello.com/b/cRyDVW7y/fit
