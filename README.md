@@ -30,19 +30,20 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 
 ## Flow of the App
 
-**Login/Onboarding**| **Signup View** |
+**Login/Onboarding**| **Workouts** |
 :---: | :---: |
 <img src="https://i.imgur.com/EDTxqY8.png" width="350"> | <img src="https://i.imgur.com/EDTxqY8.png" width="350"> 
-**Feed**| **Chat** |
+**Eating**| **Chat** |
 <img src="https://i.imgur.com/EDTxqY8.png" width="350"> | <img src="https://i.imgur.com/EDTxqY8.png" width="350"> 
-**Schedule a date**| **Notifications** |
+**Schedule Workout**| **Find Events** |
 <img src="https://i.imgur.com/EDTxqY8.png" width="350"> | <img src="https://i.imgur.com/EDTxqY8.png" width="350"> 
 
 ## Developed by:
 <p align="center">
    <img src = "https://i.imgur.com/J5ctv0K.jpg" width=150>
+  - Winston Maragh | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
 </p>
-- **Winston Maragh** | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
+
 
 
 ## Project Manangement (Trello)
