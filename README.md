@@ -26,16 +26,3 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
    <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
 </p>
 - **Winston Maragh** | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
-
-
-## Built with 
-- [Swift](https://developer.apple.com/swift/)
-- [Google Firebase](https://firebase.google.com/)
-- [WebRTC](https://developer.apple.com/swift/) (in progess)
-
-
-## Requirements
-- Xcode 9.3+
-- iOS 11.3
-- Swift 4.0+
-
