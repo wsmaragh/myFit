@@ -37,11 +37,11 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 ## Developed by:
 <p align="center">
    <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
-</p>
-  - Winston Maragh | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
+   Winston Maragh | 
+   [LinkedIn](https://www.linkedin.com/in/wsmaragh/)
+   [GitHub](https://github.com/wsmaragh)
 
-## Project Manangement (Trello)
-- https://trello.com/b/cRyDVW7y/fit
+</p>
 
 
 ## Built with 
