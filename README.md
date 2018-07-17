@@ -1,7 +1,8 @@
 # myFit (In progress)
+<a>
     <p align="center">  A simple way to get and stay fit! keep yourself accountable, find workout partners, schedule workouts, get meal suggestions, and chat with trainers. Foster a fitness community. Gamify staying fit. Badges of achievement for each level reached. 
     </p> 
-
+</a>
 
 ## Features:
 * Browse workouts
