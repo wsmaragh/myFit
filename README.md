@@ -1,14 +1,10 @@
 # myFit (In progress)
 <p align="center">
   <a>
-    <img alt="myFit" title="myFit" src="https://i.imgur.com/J5ctv0Km.jpg" width="200">
     <p align="center">  A simple way to get and stay fit! keep yourself accountable, find workout partners, schedule workouts, get meal suggestions, and chat with trainers. Foster a fitness community. Gamify staying fit. Badges of achievement for each level reached. 
     </p> 
     <br>
   </a>
-</p>
-<p align="center">
-  <img src = "https://i.imgur.com/J5ctv0Km.jpg" width=700>
 </p>
 
 
