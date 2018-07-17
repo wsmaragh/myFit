@@ -8,7 +8,7 @@
   </a>
 </p>
 <p align="center">
-  <img src = ""https://i.imgur.com/J5ctv0Km.jpg" width=700>
+  <img src = "https://i.imgur.com/J5ctv0Km.jpg" width=700>
 </p>
 
 
@@ -40,7 +40,7 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 
 ## Developed by:
 <p align="center">
-   <img src = "https://i.imgur.com/J5ctv0K.jpg" width=150>
+   <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
 </p>
   - Winston Maragh | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
 
