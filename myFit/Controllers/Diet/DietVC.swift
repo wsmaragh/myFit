@@ -14,17 +14,13 @@ class DietVC: UIViewController {
 
 	let sectionTitles: [String] = ["Breakfast", "Lunch", "Dinner", "Snacks", "Liquids"]
 	var sectionImages: [UIImage] = [#imageLiteral(resourceName: "breakfast"), #imageLiteral(resourceName: "lunch"), #imageLiteral(resourceName: "dinner"), #imageLiteral(resourceName: "snacks"), #imageLiteral(resourceName: "drinks")]
-//	var s1Data: [String] = ["Row 1", "Row 2", "Row 3"]
-//	var s2Data: [String] = ["Row 1", "Row 2", "Row 3"]
-//	var s3Data: [String] = ["Row 1", "Row 2", "Row 3"]
-//	var sectionData: [Int: [String]] = [0: ["Row 1", "Row 2", "Row 3"], 1: ["Row 1", "Row 2", "Row 3"], 2: ["Row 1", "Row 2", "Row 3"]]
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableViews()
-//			sectionData = [s1Data, s2Data, s3Data]
-	}
+
+    }
     
     private func setupTableViews(){
         tableView.delegate = self
@@ -52,8 +48,6 @@ extension DietVC: UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		//		if (sectionData[section]?.isEmpty)! {return 1}
-		//		return (sectionData[section]!.count)
 		return 3
 	}
 
