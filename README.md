@@ -31,4 +31,5 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 **Winston Maragh**
 
 * [LinkedIn](https://www.linkedin.com/in/wsmaragh/)
+* [Twitter](https://twitter.com/winstonmaragh)
 * [GitHub](https://github.com/wsmaragh)
