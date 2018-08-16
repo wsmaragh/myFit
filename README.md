@@ -4,14 +4,18 @@
     </p> 
 </a>
 
+## Designing & Planning
+<p align="center">
+  <img src="https://i.imgur.com/dCnKByw.jpg" width="300">
+</p>
+
+
 ## Features:
 * Browse workouts
 * Create custom workouts
-* Find workout partners
-* Schedule workouts with friends/partners/coaches
-* Chat with friends and/or coach
 * Meal Suggestions and Meal Planning
-* Locate Parks and Gyms close by
+* Schedule workouts with friends/partners/coaches
+* Chat with Partners
 * More...
 
 <p align="center">
@@ -25,4 +29,10 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 <p align="center">
    <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
 </p>
+
+**Winston Maragh**
+
+* [LinkedIn](https://www.linkedin.com/in/wsmaragh/)
+* [GitHub](https://github.com/wsmaragh)
+
 - **Winston Maragh** | [LinkedIn](https://www.linkedin.com/in/wsmaragh/) |  [GitHub](https://github.com/wsmaragh)
