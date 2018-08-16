@@ -6,9 +6,8 @@ target 'Fit' do
   use_frameworks!
 
   # Pods for Fit
-    pod 'GoogleSignIn'
-    pod 'FBSDKCoreKit'
-    pod 'FBSDKShareKit'
-    pod 'FBSDKLoginKit'
+    pod 'Firebase/Core'
+    pod 'RealmSwift'
+
 
 end
