@@ -6,7 +6,7 @@
 
 ## Designing & Planning
 <p align="center">
-  <img src="https://i.imgur.com/dCnKByw.jpg" width="300">
+  <img src="https://i.imgur.com/dCnKByw.jpg" width="600">
 </p>
 
 
