@@ -18,10 +18,6 @@
 * Chat with Partners
 * More...
 
-<p align="center">
-  <img src = ""https://i.imgur.com/J5ctv0Km.jpg" width=400>
-</p>
-
 
 ## Developed by:
 <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
