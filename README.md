@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Fit
-=======
 # myFit
 <a>
     <p align="center">  A simple way to get and stay fit! Keep yourself accountable, browse suggested Workouts, create custom workouts, get meal suggestions, track your daily calories, and chat with trainers. 
@@ -30,4 +27,3 @@
 * [LinkedIn](https://www.linkedin.com/in/wsmaragh/)
 * [Twitter](https://twitter.com/winstonmaragh)
 * [GitHub](https://github.com/wsmaragh)
->>>>>>> 3cf39af174d73776fad985cda9c360def6fd1fdf
