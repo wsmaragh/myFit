@@ -59,9 +59,9 @@ class OnboardingVC: UIViewController, UIScrollViewDelegate {
 
 	func createSlides() -> [UIView] {
 //		let slide1 = WelcomeLogoSlide()
-		let slide2 = OnboardingSlide(title: "Bond over food", details: "Start with a simple meal and build from there.", picture: #imageLiteral(resourceName: "bg_coffee"))
-		let slide3 = OnboardingSlide(title: "Companionship", details: "Why eat alone, when you can also meet your soulmate", picture: #imageLiteral(resourceName: "bg_plandate"))
-		let slide4 = OnboardingSlide(title: "Plan date in app", details: "Spend quality time exploring each other...", picture: #imageLiteral(resourceName: "bg_love1"))
+		let slide2 = OnboardingSlide(title: "Bond over Workout", details: "Start with a simple meal and build from there.", picture: #imageLiteral(resourceName: "fullChart"))
+		let slide3 = OnboardingSlide(title: "Companionship", details: "Why eat alone, when you can also meet your soulmate", picture: #imageLiteral(resourceName: "lowerChart"))
+		let slide4 = OnboardingSlide(title: "Plan a Workout in app", details: "Exploring new workouts...", picture: #imageLiteral(resourceName: "coreChart"))
 		return [slide2, slide3, slide4]
 	}
 
