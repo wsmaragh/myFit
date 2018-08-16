@@ -86,7 +86,7 @@
         <!--JoinVC-->
         <scene sceneID="mh6-MN-pnI">
             <objects>
-                <viewController storyboardIdentifier="join" id="tJt-l4-qld" customClass="JoinVC" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="join" id="tJt-l4-qld" customClass="JoinVC" customModule="myFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7SD-E5-O06">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -367,7 +367,7 @@
         <!--LoginVC-->
         <scene sceneID="qsC-W2-wxn">
             <objects>
-                <viewController storyboardIdentifier="login" id="d41-Vq-hNw" customClass="LoginVC" customModule="Fit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="d41-Vq-hNw" customClass="LoginVC" customModule="myFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYc-sA-ovr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

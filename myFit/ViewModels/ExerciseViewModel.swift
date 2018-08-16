@@ -1,5 +1,5 @@
 //
-//  ExerciseViewModel.swift
+//  WorkoutViewModel.swift
 //  myFit
 //
 //  Created by Winston Maragh on 8/16/18.
@@ -18,3 +18,4 @@ class ExerciseViewModel: NSObject {
     }
     
 }
+

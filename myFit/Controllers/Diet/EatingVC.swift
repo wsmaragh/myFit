@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EatingVC: UIViewController {
+class DietVC: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
 
@@ -31,7 +31,7 @@ class EatingVC: UIViewController {
 
 
 // MARK: TableView Datasource
-extension EatingVC: UITableViewDataSource {
+extension DietVC: UITableViewDataSource {
 
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return sectionTitles.count
@@ -64,7 +64,7 @@ extension EatingVC: UITableViewDataSource {
 
 
 // MARK: TableView Delegate
-extension EatingVC: UITableViewDelegate {
+extension DietVC: UITableViewDelegate {
 
 
 }
