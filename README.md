@@ -26,9 +26,7 @@ A simple way to get and stay fit! keep yourself accountable, find workout partne
 
 
 ## Developed by:
-<p align="center">
-   <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
-</p>
+<img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
 
 **Winston Maragh**
 
