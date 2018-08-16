@@ -1,6 +1,6 @@
 # myFit
 <a>
-    <p align="center">  A simple way to get and stay fit! keep yourself accountable, find workout partners, schedule workouts, get meal suggestions, and chat with trainers. Foster a fitness community. Gamify staying fit. Badges of achievement for each level reached. 
+    <p align="center">  A simple way to get and stay fit! Keep yourself accountable, browse suggested Workouts, create custom workouts, get meal suggestions, track your daily calories, and chat with trainers. 
     </p> 
 </a>
 
@@ -21,8 +21,6 @@
 <p align="center">
   <img src = ""https://i.imgur.com/J5ctv0Km.jpg" width=400>
 </p>
-
-A simple way to get and stay fit! keep yourself accountable, find workout partners, schedule workouts, get meal suggestions, and chat with trainers. Foster a fitness community. Gamify staying fit. Badges of achievement for each level reached.
 
 
 ## Developed by:
