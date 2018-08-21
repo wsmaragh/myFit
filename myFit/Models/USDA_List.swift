@@ -9,7 +9,10 @@
 import Foundation
 
 
-//USDA List
+
+//  USDA List - request a list of foods, nutrients or food groups.
+//  documentation: https://ndb.nal.usda.gov/ndb/doc/apilist/API-LIST.md
+
 struct ListResponse: Codable {
     var list: List
 }
@@ -21,10 +24,10 @@ struct List: Codable {
     var total: Int //10,
     var sr: String //"1",
     var sort: String //"n",
-    var item: [Item]
+    var item: [FoodItem]
 }
 
-struct Item: Codable {
+struct FoodItem: Codable {
     var offset: Int //0,
     var id: String //"45291778",
     var name: String //" ALL NATURAL ICE CREAM, UPC: 07203651151"
