@@ -12,7 +12,7 @@ import Foundation
 //  USDA - Search
 //  documentation: https://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md
 
-struct SearchResponse: Codable {
+struct USDASearchResponse: Codable {
     var list: SearchList
 }
 

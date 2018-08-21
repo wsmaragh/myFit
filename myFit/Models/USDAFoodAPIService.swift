@@ -65,7 +65,7 @@ struct USDAFoodAPIService {
             // if let httpResponse = httpResponse {print(httpResponse)}
             guard let data = data else {print("error getting data");return}
             do {
-                let searchResponse = try JSONDecoder().decode(SearchResponse.self, from: data)
+                let searchResponse = try JSONDecoder().decode(USDASearchResponse.self, from: data)
                 let searchResults = searchResponse.list.item
                 completion(searchResults)
             } catch let jsonErr {

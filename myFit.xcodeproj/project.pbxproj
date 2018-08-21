@@ -12,6 +12,8 @@
 		230E7920212C3DFA00C07D25 /* USDA_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E791F212C3DFA00C07D25 /* USDA_List.swift */; };
 		230E7922212C3E1E00C07D25 /* USDA_Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7921212C3E1E00C07D25 /* USDA_Report.swift */; };
 		230E7924212C409500C07D25 /* USDA_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7923212C409500C07D25 /* USDA_Search.swift */; };
+		230E7926212C56B700C07D25 /* EdamamAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7925212C56B700C07D25 /* EdamamAPIService.swift */; };
+		230E7928212C5A3400C07D25 /* Edamam_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7927212C5A3400C07D25 /* Edamam_Search.swift */; };
 		2315581520FC331700CDEFB4 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315581420FC331700CDEFB4 /* RealmService.swift */; };
 		234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020372125DF8E008BFB27 /* WorkoutViewModel.swift */; };
 		2340203A2125DFC1008BFB27 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020392125DFC1008BFB27 /* WorkoutVC.swift */; };
@@ -59,6 +61,8 @@
 		230E791F212C3DFA00C07D25 /* USDA_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_List.swift; sourceTree = "<group>"; };
 		230E7921212C3E1E00C07D25 /* USDA_Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Report.swift; sourceTree = "<group>"; };
 		230E7923212C409500C07D25 /* USDA_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Search.swift; sourceTree = "<group>"; };
+		230E7925212C56B700C07D25 /* EdamamAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamAPIService.swift; sourceTree = "<group>"; };
+		230E7927212C5A3400C07D25 /* Edamam_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edamam_Search.swift; sourceTree = "<group>"; };
 		2315581420FC331700CDEFB4 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		234020372125DF8E008BFB27 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		234020392125DFC1008BFB27 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 				230E791F212C3DFA00C07D25 /* USDA_List.swift */,
 				230E7921212C3E1E00C07D25 /* USDA_Report.swift */,
 				230E7923212C409500C07D25 /* USDA_Search.swift */,
+				230E7925212C56B700C07D25 /* EdamamAPIService.swift */,
+				230E7927212C5A3400C07D25 /* Edamam_Search.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				230E791E212C39A600C07D25 /* APIKeys.swift in Sources */,
+				230E7926212C56B700C07D25 /* EdamamAPIService.swift in Sources */,
 				81A8F51020BF6AAE00F62A37 /* ChatsVC.swift in Sources */,
 				816869A620BEFD3A00294B42 /* OnboardingSlide.swift in Sources */,
 				2340203C2125DFF1008BFB27 /* CreateWorkoutVC.swift in Sources */,
@@ -459,6 +466,7 @@
 				230E7922212C3E1E00C07D25 /* USDA_Report.swift in Sources */,
 				234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */,
 				234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */,
+				230E7928212C5A3400C07D25 /* Edamam_Search.swift in Sources */,
 				816869A420BEFC8900294B42 /* OnboardingVC.swift in Sources */,
 				81A33D6320BF21020084CC6E /* DietVC.swift in Sources */,
 				81793CEB20C17FBE00F238D0 /* CustomView.swift in Sources */,
