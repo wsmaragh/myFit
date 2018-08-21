@@ -12,23 +12,18 @@ import RealmSwift
 
 @objcMembers class Workout: Object, Codable {
     
-    var name: String
-    var exercises: [Exercise]
+    dynamic var name: String = ""
+    var exercises: [Exercise] = []
 //    var duration: Int
-    var imageStr: String
-    
+    var imageStr: String?
     var numOfExercises: Int { return exercises.count}
     
-
-    init(name: String, exercises: [Exercise], imageStr: String) {
+    convenience init(name: String, exercises: [Exercise], imageStr: String?) {
+        self.init()
         self.name = name
         self.exercises = exercises
 //        self.duration = duration
         self.imageStr = imageStr
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
     }
     
     
@@ -49,22 +44,22 @@ import RealmSwift
         //update duration
     }
     
-    static func fetchWorkout(workoutID: String, completion: @escaping ([Workout]) -> Void) {
-        let urlString = "https://\(workoutID)" //TODO - create endpoint
-        guard let url = URL(string: urlString) else {return}
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: url) { (data, httpResponse, err) in
-            if let error = err {print(error)}
-            guard let data = data else {print("error getting data");return}
-            do {
-                let workout = try JSONDecoder().decode([Workout].self, from: data)
-                completion(workout)
-            } catch let jsonErr {
-                print("error decoding JSON: ", jsonErr)
-            }
-        }
-        task.resume()
-    }
+//    static func fetchWorkout(workoutID: String, completion: @escaping ([Workout]) -> Void) {
+//        let urlString = "https://\(workoutID)" //TODO - create endpoint
+//        guard let url = URL(string: urlString) else {return}
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let task = session.dataTask(with: url) { (data, httpResponse, err) in
+//            if let error = err {print(error)}
+//            guard let data = data else {print("error getting data");return}
+//            do {
+//                let workout = try JSONDecoder().decode([Workout].self, from: data)
+//                completion(workout)
+//            } catch let jsonErr {
+//                print("error decoding JSON: ", jsonErr)
+//            }
+//        }
+//        task.resume()
+//    }
     
 }
 

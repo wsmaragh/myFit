@@ -72,39 +72,39 @@ class ExerciseVC: UIViewController {
     
     private func setupRealm(){
         let realm = RealmService.shared.realm
-        myWorkouts = RealmService.shared.read(PickUpLine.self) //Read from Realm
+        myWorkouts = RealmService.shared.read(Workout.self) //Read from Realm
         
         //observe realm for change
-        //        myWorkoutsRealmNotificationToken = realm.observe { (notification, localRealm) in
-        //            if notification.rawValue == "RLMRealmDidChangeNotification" {
-        //                self.tableView.reloadData()
-        //            }
-        //        }
+        myWorkoutsRealmNotificationToken = realm.observe { (notification, localRealm) in
+            if notification.rawValue == "RLMRealmDidChangeNotification" {
+                self.myWorkoutsCV.reloadData()
+            }
+        }
         
         // Set pickupLines notification block
-        self.myWorkoutsRealmNotificationToken = myWorkouts.observe({ (changes: RealmCollectionChange) in
-            switch changes {
-                
-            case .initial:
-                // Results are now populated and can be accessed without blocking the UI
-                self.myWorkoutsCV.reloadData()
-                break
-                
-            case .update(_, let deletions, let insertions, let modifications):
-                // Query results have changed, so apply them to the TableView
-//                self.myWorkoutsCV.beginUpdates()
-//                self.myWorkoutsCV.performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
-                self.myWorkoutsCV.insertItems(at: insertions.map { IndexPath(item: $0, section: 0) })
-                self.myWorkoutsCV.deleteItems(at: deletions.map { IndexPath(item: $0, section: 0) })
-                self.myWorkoutsCV.reloadItems(at: modifications.map { IndexPath(item: $0, section: 0)} )
-                break
-                
-            case .error(let err):
-                // An error occurred while opening the Realm file on the background worker thread
-                fatalError("\(err)")
-                break
-            }
-        })
+//        self.myWorkoutsRealmNotificationToken = myWorkouts.observe({ (changes: RealmCollectionChange) in
+//            switch changes {
+//
+//            case .initial:
+//                // Results are now populated and can be accessed without blocking the UI
+//                self.myWorkoutsCV.reloadData()
+//                break
+//
+//            case .update(_, let deletions, let insertions, let modifications):
+//                // Query results have changed, so apply them to the TableView
+////                self.myWorkoutsCV.beginUpdates()
+////                self.myWorkoutsCV.performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+//                self.myWorkoutsCV.insertItems(at: insertions.map { IndexPath(item: $0, section: 0) })
+//                self.myWorkoutsCV.deleteItems(at: deletions.map { IndexPath(item: $0, section: 0) })
+//                self.myWorkoutsCV.reloadItems(at: modifications.map { IndexPath(item: $0, section: 0)} )
+//                break
+//
+//            case .error(let err):
+//                // An error occurred while opening the Realm file on the background worker thread
+//                fatalError("\(err)")
+//                break
+//            }
+//        })
     }
     
     private func stopObservingRealm(){
@@ -119,7 +119,7 @@ class ExerciseVC: UIViewController {
         let exercise1 = Exercise(name: "Chest Press", desc: "Works the chest", instructions: "Start with arms slightly wider than shoulder width. Extend arms to unti l almost locked out, then return. Repeat 10-15x", imageStr: nil)
         let exercise2 = Exercise(name: "Chest Press", desc: "Works the chest", instructions: "Start with arms slightly wider than shoulder width. Extend arms to unti l almost locked out, then return. Repeat 10-15x", imageStr: nil)
         let exercises: [Exercise] = [exercise1, exercise2]        
-        let workout = Workout(name: "Chest", exercises: exercises, duration: 90)
+        let workout = Workout(name: "Chest", exercises: exercises, imageStr: nil)
         
         //add Workout
         RealmService.shared.create(workout)

@@ -11,52 +11,63 @@ import RealmSwift
 
 
 @objcMembers class Exercise: Object, Codable {
-    var name: String
-    var desc: String
-    var instructions: String
-    var imageStr: String?
+    
+    dynamic var name: String = ""
+    var desc: String = ""
+    var instructions: String = ""
+    var imageStr: String? = ""
     //    var video: String?
     
-    init(name: String, desc: String, instructions: String, imageStr: String?){
+    convenience init(name: String, desc: String, instructions: String, imageStr: String?){
+        self.init()
         self.name = name
         self.desc = desc
         self.instructions = instructions
         self.imageStr = imageStr ?? ""
     }
     
-    static func fetchExercise(exerciseID: String, completion: @escaping (Exercise) -> Void) {
-        let urlString = "https://\(exerciseID)" //TODO - create endpoint
-        guard let url = URL(string: urlString) else {return}
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: url) { (data, httpResponse, err) in
-            if let error = err {print(error)}
-            guard let data = data else {print("error getting data");return}
-            do {
-                let exercise = try JSONDecoder().decode(Exercise.self, from: data)
-                completion(exercise)
-            } catch let jsonErr {
-                print("error decoding JSON: ", jsonErr)
-            }
-        }
-        task.resume()
-    }
+//    class MyModel: Object {
+//        dynamic var myValue = ""
+//
+//        convenience init(myValue: String) {
+//            self.init() //Please note this says 'self' and not 'super'
+//            self.myValue = myValue
+//        }
+//    }
     
-    static func fetchWorkoutExercises(workoutID: String, completion: @escaping ([Exercise]) -> Void) {
-        let urlString = "https://\(workoutID)" //TODO - create endpoint
-        guard let url = URL(string: urlString) else {return}
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: url) { (data, httpResponse, err) in
-            if let error = err {print(error)}
-            guard let data = data else {print("error getting data");return}
-            do {
-                let exercises = try JSONDecoder().decode([Exercise].self, from: data)
-                completion(exercises)
-            } catch let jsonErr {
-                print("error decoding JSON: ", jsonErr)
-            }
-        }
-        task.resume()
-    }
+//    static func fetchExercise(exerciseID: String, completion: @escaping (Exercise) -> Void) {
+//        let urlString = "https://\(exerciseID)" //TODO - create endpoint
+//        guard let url = URL(string: urlString) else {return}
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let task = session.dataTask(with: url) { (data, httpResponse, err) in
+//            if let error = err {print(error)}
+//            guard let data = data else {print("error getting data");return}
+//            do {
+//                let exercise = try JSONDecoder().decode(Exercise.self, from: data)
+//                completion(exercise)
+//            } catch let jsonErr {
+//                print("error decoding JSON: ", jsonErr)
+//            }
+//        }
+//        task.resume()
+//    }
+    
+//    static func fetchWorkoutExercises(workoutID: String, completion: @escaping ([Exercise]) -> Void) {
+//        let urlString = "https://\(workoutID)" //TODO - create endpoint
+//        guard let url = URL(string: urlString) else {return}
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let task = session.dataTask(with: url) { (data, httpResponse, err) in
+//            if let error = err {print(error)}
+//            guard let data = data else {print("error getting data");return}
+//            do {
+//                let exercises = try JSONDecoder().decode([Exercise].self, from: data)
+//                completion(exercises)
+//            } catch let jsonErr {
+//                print("error decoding JSON: ", jsonErr)
+//            }
+//        }
+//        task.resume()
+//    }
     
 }
 

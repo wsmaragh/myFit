@@ -64,3 +64,12 @@ enum NutritionalCodes: String {
     case P = "Phosphorus" // mg
     case FE = "Iron" // mg
 }
+
+
+enum CalorieCriteria: String {
+    //The format is calories=RANGE where RANGE is replaced by the value in kcal. RANGE is in one of MIN+, MIN-MAX or MAX, where MIN and MAX are non-negative integer numbers. The + symbol needs to be properly encoded. Examples: “calories=100-300” will return all foods with which have between 100 and 300 kcal per serving.
+    case lowCalorieCount = "001-300" //range
+    case midCalorieCount = "301-600" //range
+    case highCalorieCount = "601-1200" //range
+
+}

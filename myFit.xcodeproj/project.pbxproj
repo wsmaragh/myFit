@@ -14,6 +14,8 @@
 		230E7924212C409500C07D25 /* USDA_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7923212C409500C07D25 /* USDA_Search.swift */; };
 		230E7926212C56B700C07D25 /* EdamamAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7925212C56B700C07D25 /* EdamamAPIService.swift */; };
 		230E7928212C5A3400C07D25 /* Edamam_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7927212C5A3400C07D25 /* Edamam_Search.swift */; };
+		230E792A212C736A00C07D25 /* Edamam_Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7929212C736A00C07D25 /* Edamam_Recipe.swift */; };
+		230E793C212C88F100C07D25 /* Edamam_NutritionAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E793B212C88F100C07D25 /* Edamam_NutritionAnalysis.swift */; };
 		2315581520FC331700CDEFB4 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315581420FC331700CDEFB4 /* RealmService.swift */; };
 		234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020372125DF8E008BFB27 /* WorkoutViewModel.swift */; };
 		2340203A2125DFC1008BFB27 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020392125DFC1008BFB27 /* WorkoutVC.swift */; };
@@ -63,6 +65,8 @@
 		230E7923212C409500C07D25 /* USDA_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Search.swift; sourceTree = "<group>"; };
 		230E7925212C56B700C07D25 /* EdamamAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamAPIService.swift; sourceTree = "<group>"; };
 		230E7927212C5A3400C07D25 /* Edamam_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edamam_Search.swift; sourceTree = "<group>"; };
+		230E7929212C736A00C07D25 /* Edamam_Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edamam_Recipe.swift; sourceTree = "<group>"; };
+		230E793B212C88F100C07D25 /* Edamam_NutritionAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edamam_NutritionAnalysis.swift; sourceTree = "<group>"; };
 		2315581420FC331700CDEFB4 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		234020372125DF8E008BFB27 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		234020392125DFC1008BFB27 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 				230E7923212C409500C07D25 /* USDA_Search.swift */,
 				230E7925212C56B700C07D25 /* EdamamAPIService.swift */,
 				230E7927212C5A3400C07D25 /* Edamam_Search.swift */,
+				230E7929212C736A00C07D25 /* Edamam_Recipe.swift */,
+				230E793B212C88F100C07D25 /* Edamam_NutritionAnalysis.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,10 +483,12 @@
 				23E2E3B72124DD0E00DC1D2F /* DetailExerciseVC.swift in Sources */,
 				81793CE920C17FBC00F238D0 /* CustomTextField.swift in Sources */,
 				81A8F51B20BFA29000F62A37 /* HeaderCell.swift in Sources */,
+				230E793C212C88F100C07D25 /* Edamam_NutritionAnalysis.swift in Sources */,
 				81A8F51D20C0018E00F62A37 /* FoodCell.swift in Sources */,
 				236B8F452124B67C002612E7 /* Workout.swift in Sources */,
 				230E791C212C396E00C07D25 /* USDAFoodAPIService.swift in Sources */,
 				236B8F3E2124AEDB002612E7 /* BodyPartVC.swift in Sources */,
+				230E792A212C736A00C07D25 /* Edamam_Recipe.swift in Sources */,
 				8128C2F2209532CE0088F28D /* AppDelegate.swift in Sources */,
 				234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */,
 				236B8F402124AFE9002612E7 /* Exercise.swift in Sources */,

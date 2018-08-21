@@ -16,7 +16,8 @@ class TableCellForCollectionView: UITableViewCell {
 
 	// data
 	var images  = [[#imageLiteral(resourceName: "workout_empty"), #imageLiteral(resourceName: "workout_filled"), #imageLiteral(resourceName: "events_filled")], [#imageLiteral(resourceName: "photo-bubble-placeholder-icon"), #imageLiteral(resourceName: "favList"), #imageLiteral(resourceName: "add_filled"), #imageLiteral(resourceName: "base-message-failed-icon"), #imageLiteral(resourceName: "events_filled")], [#imageLiteral(resourceName: "progress_filled"), #imageLiteral(resourceName: "eat_filled")]]
-    var workouts: 
+    var myWorkouts: [Workout] = []
+    var suggestedWorkouts: [Workout] = []
     let workoutCell = "WorkoutCell"
 
 
@@ -52,10 +53,9 @@ extension TableCellForCollectionView: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: workoutCell, for: indexPath) as! WorkoutCell
-        let workout = workouts[indexPath]
-		let image = images[collectionView.tag][indexPath.row]
-        
-        cell.configureCell(workout: <#T##Workout#>)
+        let workout = myWorkouts[indexPath.item]
+        cell.configureCell(workout: workout)
+//        let image = images[collectionView.tag][indexPath.row]
 		return cell
 	}
     

@@ -13,8 +13,8 @@ struct USDAFoodAPIService {
 
     //  MARK: List
     
-    static func fetchFoodList(completion: @escaping ([FoodItem]) -> Void) {
-        let urlString = "https://api.nal.usda.gov/ndb/list?api_key=\(APIKeys.USDA_APIKey)&format=json&lt=\(ListType.food.rawValue)&sort=n"
+    static func fetchFoodList(listType: ListType, completion: @escaping ([FoodItem]) -> Void) {
+        let urlString = "https://api.nal.usda.gov/ndb/list?api_key=\(APIKeys.USDA_APIKey)&format=json&lt=\(listType.rawValue)&sort=n"
         guard let url = URL(string: urlString) else {return}
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url) { (data, httpResponse, err) in
@@ -32,32 +32,12 @@ struct USDAFoodAPIService {
         task.resume()
     }
     
-    static func fetchFoodGroupList(completion: @escaping ([Item]) -> Void) {
-        let urlString = "https://api.nal.usda.gov/ndb/list?api_key=\(APIKeys.USDA_APIKey)&format=json&lt=\(ListType.foodGroup.rawValue)"
-        guard let url = URL(string: urlString) else {return}
-        
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: url) { (data, httpResponse, err) in
-            if let error = err {print(error)}
-            // if let httpResponse = httpResponse {print(httpResponse)}
-            guard let data = data else {print("error getting data");return}
-            do {
-                let listResponse = try JSONDecoder().decode(ListResponse.self, from: data)
-                let foodGroupList = listResponse.list.item
-                completion(foodGroupList)
-            } catch let jsonErr {
-                print("error decoding JSON: ", jsonErr)
-            }
-            
-        }
-        task.resume()
-    }
-    
     
     //  MARK: Search
     
     static func fetchFoodSearch(with searchTerm: String, completion: @escaping ([SearchItem]) -> Void) {
-        let urlString = "https://api.nal.usda.gov/ndb/search/?api_key=\(APIKeys.USDA_APIKey)&format=json&offset=0&max=50&sort=\(SearchSort.byFoodName.rawValue)&q=\(searchTerm)"
+        guard let safeSearchTerm = searchTerm.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
+        let urlString = "https://api.nal.usda.gov/ndb/search/?api_key=\(APIKeys.USDA_APIKey)&format=json&offset=0&max=50&sort=\(SearchSort.byFoodName.rawValue)&q=\(safeSearchTerm)"
         guard let url = URL(string: urlString) else {return}
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url) { (data, httpResponse, err) in
@@ -113,28 +93,8 @@ struct USDAFoodAPIService {
             guard let data = data else {print("error getting data");return}
             do {
                 let foodReportResponse = try JSONDecoder().decode(FoodReportResponseV2.self, from: data)
-                let foodReport = foodReportResponse.foods[0]
+                let foodReport = foodReportResponse.foods[0].food
                 completion(foodReport)
-            } catch let jsonErr {
-                print("error decoding JSON: ", jsonErr)
-            }
-        }
-        task.resume()
-    }
-    
-    
-    //  MARK: fetch Generic Data
-    
-    static func fetchData<T: Codable>(urlString: String, completion: @escaping (T) -> Void) {
-        let urlString = "https://api.nal.usda.gov/ndb/list?format=json&lt=g&api_key=\(ApiKey)"
-        guard let url = URL(string: urlString) else {return}
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: url) { (data, httpResponse, err) in
-            if let error = err {print(error)}
-            guard let data = data else {print("error getting data");return}
-            do {
-                let obj = try JSONDecoder().decode(T.self, from: data)
-                completion(obj)
             } catch let jsonErr {
                 print("error decoding JSON: ", jsonErr)
             }

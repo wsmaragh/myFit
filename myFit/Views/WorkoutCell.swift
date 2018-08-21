@@ -17,11 +17,12 @@ class WorkoutCell: UICollectionViewCell {
     
     func configureCell(workout: Workout) {
         workoutLabel.text = workout.name
-        
+        //image
+        guard let imageStr = workout.imageStr else {return}
         spinner.startAnimating()
         spinner.isHidden = false
         DispatchQueue.global().async { [weak self] in
-            guard let url = URL(string: workout.imageStr) else {return}
+            guard let url = URL(string: imageStr) else {return}
             guard let data = try? Data(contentsOf: url) else {return}
             guard let image = UIImage(data: data) else {return}
             DispatchQueue.main.async {
