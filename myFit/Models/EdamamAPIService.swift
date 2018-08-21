@@ -65,4 +65,8 @@ struct EdamamInfo {
     
     //Nutritional Analysis - https://developer.edamam.com/edamam-docs-nutrition-api
     
+    
+    
+    // Nutrients (POST request)
+    
 }
