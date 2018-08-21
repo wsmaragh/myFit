@@ -7,23 +7,40 @@
 //
 
 import Foundation
+import RealmSwift
 
 
-class Workout {
+@objcMembers class Workout: Object, Codable {
+    
     var name: String
-    var exercises: [Exercise] = []
-    var duration: Int = 0 //minutes
-    var numOfExercises: Int {
-        return exercises.count
+    var exercises: [Exercise]
+//    var duration: Int
+    var imageStr: String
+    
+    var numOfExercises: Int { return exercises.count}
+    
+
+    init(name: String, exercises: [Exercise], imageStr: String) {
+        self.name = name
+        self.exercises = exercises
+//        self.duration = duration
+        self.imageStr = imageStr
     }
     
-    init(name: String){
-        self.name = name
+    required init() {
+        fatalError("init() has not been implemented")
     }
+    
+    
+    
+//    func durationString() -> String {
+//        return String(duration)
+//    }
     
     func addExercise(addExercise exercise: Exercise){
         self.exercises.append(exercise)
         //update duration
+//        self.duration += exercise
     }
     
     func deleteExercise(deleteExercise exercise: Exercise){
@@ -31,4 +48,23 @@ class Workout {
         //get the index of the exercise and delete
         //update duration
     }
+    
+    static func fetchWorkout(workoutID: String, completion: @escaping ([Workout]) -> Void) {
+        let urlString = "https://\(workoutID)" //TODO - create endpoint
+        guard let url = URL(string: urlString) else {return}
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: url) { (data, httpResponse, err) in
+            if let error = err {print(error)}
+            guard let data = data else {print("error getting data");return}
+            do {
+                let workout = try JSONDecoder().decode([Workout].self, from: data)
+                completion(workout)
+            } catch let jsonErr {
+                print("error decoding JSON: ", jsonErr)
+            }
+        }
+        task.resume()
+    }
+    
 }
+

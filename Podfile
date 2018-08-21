@@ -6,11 +6,7 @@ target 'myFit' do
   use_frameworks!
 
   # Pods for myFit
-    pod 'Firebase/Core'
     pod 'RealmSwift'
-    pod 'Segmentio', '~> 3.0'
     pod 'Kingfisher'
     pod 'Alamofire'
-    pod 'SnapKit'
-
 end

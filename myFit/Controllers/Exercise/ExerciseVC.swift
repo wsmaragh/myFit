@@ -8,7 +8,7 @@
 //
 
 import UIKit
-import Segmentio
+import RealmSwift
 
 
 class ExerciseVC: UIViewController {
@@ -16,26 +16,115 @@ class ExerciseVC: UIViewController {
     @IBOutlet weak var myWorkoutsCV: UICollectionView!
     @IBOutlet weak var suggestedWorkoutsCV: UICollectionView!
     
-
+    
     var viewModel: ExerciseViewModel!
 
+    var sections: [String] = ["My Workouts", "Suggested Workouts"]
+    var myWorkouts : Results<Workout>!
+    var suggestedWorkouts : Results<Workout>!
+    
+    
+//    var myWorkouts = [Workout]() {
+//        didSet{
+//            myWorkoutsCV.reloadData()
+//        }
+//    }
+//    var suggestedWorkouts = [Workout]() {
+//        didSet{
+//          suggestedWorkoutsCV.reloadData()
+//        }
+//    }
+    
+    
+    var myWorkoutsRealmNotificationToken: NotificationToken?
+    var suggestedWorkoutsRealmNotificationToken: NotificationToken?
+
+    let workoutCell = "WorkoutCell"
+//    let suggestedWorkoutCell = "SuggestedWorkoutCell"
+
+    let sectionHeaderView = "SectionHeaderView"
+    
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupDelegatesDatasource()
-	}
-
-	override func viewWillAppear(_ animated: Bool) {
+        setupRealm()
 
 	}
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        stopObservingRealm()
+    }
+    
 
 	func setupDelegatesDatasource(){
-//        myWorkoutsCV.delegate = self
-//        myWorkoutsCV.dataSource = self
+        myWorkoutsCV.delegate = self
+        myWorkoutsCV.dataSource = self
 //        suggestedWorkoutsCV.delegate = self
 //        suggestedWorkoutsCV.dataSource = self
         
 	}
+    
+    private func setupRealm(){
+        let realm = RealmService.shared.realm
+        myWorkouts = RealmService.shared.read(PickUpLine.self) //Read from Realm
+        
+        //observe realm for change
+        //        myWorkoutsRealmNotificationToken = realm.observe { (notification, localRealm) in
+        //            if notification.rawValue == "RLMRealmDidChangeNotification" {
+        //                self.tableView.reloadData()
+        //            }
+        //        }
+        
+        // Set pickupLines notification block
+        self.myWorkoutsRealmNotificationToken = myWorkouts.observe({ (changes: RealmCollectionChange) in
+            switch changes {
+                
+            case .initial:
+                // Results are now populated and can be accessed without blocking the UI
+                self.myWorkoutsCV.reloadData()
+                break
+                
+            case .update(_, let deletions, let insertions, let modifications):
+                // Query results have changed, so apply them to the TableView
+//                self.myWorkoutsCV.beginUpdates()
+//                self.myWorkoutsCV.performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+                self.myWorkoutsCV.insertItems(at: insertions.map { IndexPath(item: $0, section: 0) })
+                self.myWorkoutsCV.deleteItems(at: deletions.map { IndexPath(item: $0, section: 0) })
+                self.myWorkoutsCV.reloadItems(at: modifications.map { IndexPath(item: $0, section: 0)} )
+                break
+                
+            case .error(let err):
+                // An error occurred while opening the Realm file on the background worker thread
+                fatalError("\(err)")
+                break
+            }
+        })
+    }
+    
+    private func stopObservingRealm(){
+        myWorkoutsRealmNotificationToken?.invalidate()
+//        suggestedWorkoutsRealmNotificationToken?.invalidate()
+    }
 
+    
+    @IBAction func AddWorkoutTapped() {
+    
+        //create workout
+        let exercise1 = Exercise(name: "Chest Press", desc: "Works the chest", instructions: "Start with arms slightly wider than shoulder width. Extend arms to unti l almost locked out, then return. Repeat 10-15x", imageStr: nil)
+        let exercise2 = Exercise(name: "Chest Press", desc: "Works the chest", instructions: "Start with arms slightly wider than shoulder width. Extend arms to unti l almost locked out, then return. Repeat 10-15x", imageStr: nil)
+        let exercises: [Exercise] = [exercise1, exercise2]        
+        let workout = Workout(name: "Chest", exercises: exercises, duration: 90)
+        
+        //add Workout
+        RealmService.shared.create(workout)
+    }
+    
 }
 
 
@@ -44,7 +133,7 @@ class ExerciseVC: UIViewController {
 extension ExerciseVC: UICollectionViewDataSource {
 	
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-		return 1
+		return sections.count
 	}
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,7 +145,7 @@ extension ExerciseVC: UICollectionViewDataSource {
         switch collectionView {
 		
             case self.suggestedWorkoutsCV:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sWorkout", for: indexPath) as! WorkoutCVC
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sWorkout", for: indexPath) as! WorkoutCell
                 cell.backgroundColor = .orange
     //			let fave = faves[indexPath.row]
     //			cell.imgView.image = fave

@@ -15,9 +15,7 @@
 		234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */; };
 		236B8F3E2124AEDB002612E7 /* BodyPartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F3D2124AEDB002612E7 /* BodyPartVC.swift */; };
 		236B8F402124AFE9002612E7 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F3F2124AFE9002612E7 /* Exercise.swift */; };
-		236B8F422124B3ED002612E7 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F412124B3ED002612E7 /* APIKeys.swift */; };
 		236B8F452124B67C002612E7 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F442124B67C002612E7 /* Workout.swift */; };
-		239283A820FF725D00F467A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 239283A720FF725D00F467A0 /* GoogleService-Info.plist */; };
 		23E2E3B22124B8CF00DC1D2F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2E3B12124B8CF00DC1D2F /* Enums.swift */; };
 		23E2E3B72124DD0E00DC1D2F /* DetailExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2E3B62124DD0E00DC1D2F /* DetailExerciseVC.swift */; };
 		8128C2F2209532CE0088F28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8128C2F1209532CE0088F28D /* AppDelegate.swift */; };
@@ -31,7 +29,7 @@
 		816869A420BEFC8900294B42 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816869A320BEFC8900294B42 /* OnboardingVC.swift */; };
 		816869A620BEFD3A00294B42 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816869A520BEFD3A00294B42 /* OnboardingSlide.swift */; };
 		816869A820BEFDB000294B42 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816869A720BEFDB000294B42 /* Extensions.swift */; };
-		8170BC6B20C5D81800FA928E /* WorkoutCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6A20C5D81800FA928E /* WorkoutCVC.swift */; };
+		8170BC6B20C5D81800FA928E /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6A20C5D81800FA928E /* WorkoutCell.swift */; };
 		8170BC6D20C711CA00FA928E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6C20C711CA00FA928E /* BMI.swift */; };
 		81793CE320C17FB300F238D0 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81793CE220C17FB300F238D0 /* CustomImageView.swift */; };
 		81793CE520C17FB700F238D0 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81793CE420C17FB600F238D0 /* CustomButtom.swift */; };
@@ -46,7 +44,6 @@
 		81A8F51B20BFA29000F62A37 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8F51A20BFA29000F62A37 /* HeaderCell.swift */; };
 		81A8F51D20C0018E00F62A37 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8F51C20C0018E00F62A37 /* FoodCell.swift */; };
 		81E5A8C120CB039100CCD7E4 /* TableCellForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5A8C020CB039100CCD7E4 /* TableCellForCollectionView.swift */; };
-		81E5A8C320CB047700CCD7E4 /* WorkoutCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5A8C220CB047700CCD7E4 /* WorkoutCVCell.swift */; };
 		90F39DEA28491FD4C2AAA0F6 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,9 +58,7 @@
 		234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewModel.swift; sourceTree = "<group>"; };
 		236B8F3D2124AEDB002612E7 /* BodyPartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartVC.swift; sourceTree = "<group>"; };
 		236B8F3F2124AFE9002612E7 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		236B8F412124B3ED002612E7 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		236B8F442124B67C002612E7 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
-		239283A720FF725D00F467A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23E2E3B12124B8CF00DC1D2F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		23E2E3B62124DD0E00DC1D2F /* DetailExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseVC.swift; sourceTree = "<group>"; };
 		3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myFit.framework; path = "../Debug-iphonesimulator/Pods_myFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +75,7 @@
 		816869A320BEFC8900294B42 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		816869A520BEFD3A00294B42 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		816869A720BEFDB000294B42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8170BC6A20C5D81800FA928E /* WorkoutCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCVC.swift; sourceTree = "<group>"; };
+		8170BC6A20C5D81800FA928E /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		8170BC6C20C711CA00FA928E /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		81793CE220C17FB300F238D0 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		81793CE420C17FB600F238D0 /* CustomButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
@@ -95,7 +90,6 @@
 		81A8F51A20BFA29000F62A37 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		81A8F51C20C0018E00F62A37 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		81E5A8C020CB039100CCD7E4 /* TableCellForCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellForCollectionView.swift; sourceTree = "<group>"; };
-		81E5A8C220CB047700CCD7E4 /* WorkoutCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCVCell.swift; sourceTree = "<group>"; };
 		B4EE77A01A0520C5CD40D94E /* Pods-myFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-myFit/Pods-myFit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,9 +239,8 @@
 				816869A520BEFD3A00294B42 /* OnboardingSlide.swift */,
 				81A8F51A20BFA29000F62A37 /* HeaderCell.swift */,
 				81A8F51C20C0018E00F62A37 /* FoodCell.swift */,
-				8170BC6A20C5D81800FA928E /* WorkoutCVC.swift */,
+				8170BC6A20C5D81800FA928E /* WorkoutCell.swift */,
 				81E5A8C020CB039100CCD7E4 /* TableCellForCollectionView.swift */,
-				81E5A8C220CB047700CCD7E4 /* WorkoutCVCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,7 +252,6 @@
 				236B8F442124B67C002612E7 /* Workout.swift */,
 				236B8F3F2124AFE9002612E7 /* Exercise.swift */,
 				8170BC6C20C711CA00FA928E /* BMI.swift */,
-				236B8F412124B3ED002612E7 /* APIKeys.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,7 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				81793CDF20C17F9C00F238D0 /* Customs */,
-				239283A720FF725D00F467A0 /* GoogleService-Info.plist */,
 				8128C2FD209532D00088F28D /* Info.plist */,
 				8128C2F1209532CE0088F28D /* AppDelegate.swift */,
 			);
@@ -302,16 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				2315581420FC331700CDEFB4 /* RealmService.swift */,
-				81A8F51620BF704700F62A37 /* Firebase */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		81A8F51620BF704700F62A37 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Firebase;
 			sourceTree = "<group>";
 		};
 		856A46B0B414359B83EA3991 /* Pods */ = {
@@ -383,7 +366,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239283A820FF725D00F467A0 /* GoogleService-Info.plist in Resources */,
 				81793CED20C1FA9100F238D0 /* Exercises.xcassets in Resources */,
 				8128C2FC209532D00088F28D /* LaunchScreen.storyboard in Resources */,
 				8168699A20BEF57600294B42 /* Onboarding.storyboard in Resources */,
@@ -455,7 +437,6 @@
 			files = (
 				81A8F51020BF6AAE00F62A37 /* ChatsVC.swift in Sources */,
 				816869A620BEFD3A00294B42 /* OnboardingSlide.swift in Sources */,
-				236B8F422124B3ED002612E7 /* APIKeys.swift in Sources */,
 				2340203C2125DFF1008BFB27 /* CreateWorkoutVC.swift in Sources */,
 				8170BC6D20C711CA00FA928E /* BMI.swift in Sources */,
 				234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */,
@@ -479,11 +460,10 @@
 				23E2E3B22124B8CF00DC1D2F /* Enums.swift in Sources */,
 				816869A220BEFC7500294B42 /* JoinVC.swift in Sources */,
 				81A33D6720BF211C0084CC6E /* EventsVC.swift in Sources */,
-				81E5A8C320CB047700CCD7E4 /* WorkoutCVCell.swift in Sources */,
 				81793CE520C17FB700F238D0 /* CustomButtom.swift in Sources */,
 				81A33D6120BF20EF0084CC6E /* ExerciseVC.swift in Sources */,
 				816869A820BEFDB000294B42 /* Extensions.swift in Sources */,
-				8170BC6B20C5D81800FA928E /* WorkoutCVC.swift in Sources */,
+				8170BC6B20C5D81800FA928E /* WorkoutCell.swift in Sources */,
 				2340203A2125DFC1008BFB27 /* WorkoutVC.swift in Sources */,
 				2315581520FC331700CDEFB4 /* RealmService.swift in Sources */,
 			);

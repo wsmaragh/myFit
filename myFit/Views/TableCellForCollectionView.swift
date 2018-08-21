@@ -16,8 +16,9 @@ class TableCellForCollectionView: UITableViewCell {
 
 	// data
 	var images  = [[#imageLiteral(resourceName: "workout_empty"), #imageLiteral(resourceName: "workout_filled"), #imageLiteral(resourceName: "events_filled")], [#imageLiteral(resourceName: "photo-bubble-placeholder-icon"), #imageLiteral(resourceName: "favList"), #imageLiteral(resourceName: "add_filled"), #imageLiteral(resourceName: "base-message-failed-icon"), #imageLiteral(resourceName: "events_filled")], [#imageLiteral(resourceName: "progress_filled"), #imageLiteral(resourceName: "eat_filled")]]
+    var workouts: 
+    let workoutCell = "WorkoutCell"
 
-	let cellSpacing:CGFloat = 10.0
 
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
@@ -26,10 +27,14 @@ class TableCellForCollectionView: UITableViewCell {
 	func configureCollectionView(forCell cell: TableCellForCollectionView, forIndexPath indexPath: IndexPath) {
 		cell.collectionView.delegate = self
 		cell.collectionView.dataSource = self
+        
+//        let workoutCellNib = UINib(nibName: workoutCell, bundle: nil)
+//        workoutCV.register(workoutCellNib, forCellWithReuseIdentifier: workoutCell)
+//
+//        let sectionHeaderViewNib = UINib(nibName: sectionHeaderView, bundle: nil)
+//        workoutCV.register(sectionHeaderViewNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: sectionHeaderView)
 
-		// tag the collectionView here to so you can access the correct data set in UICollectionViewDataSource
 		cell.collectionView.tag = indexPath.row
-
 		cell.headerTitle.text = "Header \(indexPath.row)"
 	}
 }
@@ -37,7 +42,7 @@ class TableCellForCollectionView: UITableViewCell {
 
 
 
-//Datasource
+// MARK: CollectionView Datasource
 extension TableCellForCollectionView: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		// here we use the tag to access the correct index of our data
@@ -46,36 +51,34 @@ extension TableCellForCollectionView: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorkoutCVCell", for: indexPath) as! WorkoutCVCell
-
-		// here we use the tag to access the correct index of our data
-		// e.g tag = 0, 1, 2, ...or the relavant index in the array
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: workoutCell, for: indexPath) as! WorkoutCell
+        let workout = workouts[indexPath]
 		let image = images[collectionView.tag][indexPath.row]
-
-		cell.imageView.image = image
+        
+        cell.configureCell(workout: <#T##Workout#>)
 		return cell
 	}
+    
+//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: sectionHeaderView, for: indexPath) as! SectionHeaderView
+//        view.configureSectionHeaderView(indexSection: indexPath.section)
+//        return view
+//    }
 }
 
 
-//Flow layout
+// Mark: CollectionViuew Layout
 extension TableCellForCollectionView: UICollectionViewDelegateFlowLayout {
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let numCells: CGFloat = 2.0 // cells visible in row
-		let numSpaces: CGFloat = numCells + 1
-		let screenWidth = UIScreen.main.bounds.width // screen width of device
-
-		// retrun item size
-		return CGSize(width: (screenWidth - (cellSpacing * numSpaces)) / numCells, height: collectionView.bounds.height - (cellSpacing * 2))
-	}
-
-	// padding around our collection view
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		return UIEdgeInsets(top: cellSpacing, left: 0, bottom: cellSpacing, right: 0)
-	}
-
-	// padding between cells / items
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-		return cellSpacing
-	}
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellSpacing: CGFloat = 5.0
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = cellSpacing
+        layout.minimumInteritemSpacing = cellSpacing
+        layout.sectionInset = UIEdgeInsets(top: cellSpacing, left: 0, bottom: 20, right: 0)
+//        layout.headerReferenceSize =  CGSize(width: collectionView.frame.width, height: 40.0)
+//        layout.footerReferenceSize = CGSize(width: collectionView.frame.width, height: 40.0)
+        let numberOfItemsPerRow: CGFloat = 2.0
+        let itemWidth = (collectionView.bounds.width - layout.minimumLineSpacing) / numberOfItemsPerRow
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
 }

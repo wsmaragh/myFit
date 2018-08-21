@@ -151,7 +151,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyWorkoutCell" id="ukM-18-Vz9">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyWorkoutCell" id="ukM-18-Vz9" customClass="WorkoutCell" customModule="myFit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24" width="101" height="102"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -168,11 +168,16 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RTI-w9-gKA">
+                                                            <rect key="frame" x="40" y="41" width="20" height="20"/>
+                                                        </activityIndicatorView>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
+                                                    <constraint firstItem="RTI-w9-gKA" firstAttribute="centerX" secondItem="puG-yg-uNb" secondAttribute="centerX" id="1wm-hN-3P2"/>
                                                     <constraint firstAttribute="bottom" secondItem="puG-yg-uNb" secondAttribute="bottom" id="7oR-om-bPW"/>
                                                     <constraint firstAttribute="trailing" secondItem="puG-yg-uNb" secondAttribute="trailing" id="Rsp-mA-jR0"/>
+                                                    <constraint firstItem="RTI-w9-gKA" firstAttribute="centerY" secondItem="puG-yg-uNb" secondAttribute="centerY" id="Sj5-9c-AAP"/>
                                                     <constraint firstItem="puG-yg-uNb" firstAttribute="top" secondItem="ukM-18-Vz9" secondAttribute="top" id="byG-gt-LpH"/>
                                                     <constraint firstItem="HCy-9E-ge2" firstAttribute="leading" secondItem="ukM-18-Vz9" secondAttribute="leading" id="eqX-N0-Qxp"/>
                                                     <constraint firstAttribute="bottom" secondItem="HCy-9E-ge2" secondAttribute="bottom" id="jnY-2C-Gem"/>
@@ -180,6 +185,11 @@
                                                     <constraint firstAttribute="trailing" secondItem="HCy-9E-ge2" secondAttribute="trailing" id="yxr-IV-DeO"/>
                                                 </constraints>
                                                 <size key="customSize" width="101" height="102"/>
+                                                <connections>
+                                                    <outlet property="spinner" destination="RTI-w9-gKA" id="MZv-9I-CS5"/>
+                                                    <outlet property="workoutImageView" destination="puG-yg-uNb" id="xdO-x2-Y3B"/>
+                                                    <outlet property="workoutLabel" destination="HCy-9E-ge2" id="LD3-5D-O0T"/>
+                                                </connections>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddWorkoutCell" id="wTs-C7-8FX">
                                                 <rect key="frame" x="111" y="28" width="92" height="94"/>
@@ -219,7 +229,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SuggestedWorkoutCell" id="fFT-lV-s9x">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SuggestedWorkoutCell" id="fFT-lV-s9x" customClass="WorkoutCell" customModule="myFit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="21.5" width="102" height="107"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -236,6 +246,10 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dkA-jo-1oi">
+                                                            <rect key="frame" x="41" y="44" width="20" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </activityIndicatorView>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
@@ -248,6 +262,9 @@
                                                     <constraint firstAttribute="bottom" secondItem="MpX-vS-Ri4" secondAttribute="bottom" id="yb2-WU-fAN"/>
                                                 </constraints>
                                                 <connections>
+                                                    <outlet property="spinner" destination="dkA-jo-1oi" id="o6A-FU-Cem"/>
+                                                    <outlet property="workoutImageView" destination="2Jq-sG-SHC" id="pjo-fk-V3w"/>
+                                                    <outlet property="workoutLabel" destination="MpX-vS-Ri4" id="5wZ-Ds-mCc"/>
                                                     <segue destination="grt-OH-eFy" kind="show" id="eal-qf-QuF"/>
                                                 </connections>
                                             </collectionViewCell>

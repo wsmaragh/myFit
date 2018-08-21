@@ -7,20 +7,55 @@
 //
 
 import UIKit
+import RealmSwift
 
 
-class Exercise {
+@objcMembers class Exercise: Object, Codable {
     var name: String
-    var description: String
+    var desc: String
     var instructions: String
-    var image: UIImage?
+    var imageStr: String?
     //    var video: String?
     
-    init(name: String, description: String, instructions: String, image: UIImage){
+    init(name: String, desc: String, instructions: String, imageStr: String?){
         self.name = name
-        self.description = description
+        self.desc = desc
         self.instructions = instructions
-        self.image = image
+        self.imageStr = imageStr ?? ""
+    }
+    
+    static func fetchExercise(exerciseID: String, completion: @escaping (Exercise) -> Void) {
+        let urlString = "https://\(exerciseID)" //TODO - create endpoint
+        guard let url = URL(string: urlString) else {return}
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: url) { (data, httpResponse, err) in
+            if let error = err {print(error)}
+            guard let data = data else {print("error getting data");return}
+            do {
+                let exercise = try JSONDecoder().decode(Exercise.self, from: data)
+                completion(exercise)
+            } catch let jsonErr {
+                print("error decoding JSON: ", jsonErr)
+            }
+        }
+        task.resume()
+    }
+    
+    static func fetchWorkoutExercises(workoutID: String, completion: @escaping ([Exercise]) -> Void) {
+        let urlString = "https://\(workoutID)" //TODO - create endpoint
+        guard let url = URL(string: urlString) else {return}
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: url) { (data, httpResponse, err) in
+            if let error = err {print(error)}
+            guard let data = data else {print("error getting data");return}
+            do {
+                let exercises = try JSONDecoder().decode([Exercise].self, from: data)
+                completion(exercises)
+            } catch let jsonErr {
+                print("error decoding JSON: ", jsonErr)
+            }
+        }
+        task.resume()
     }
     
 }

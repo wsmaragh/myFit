@@ -6,9 +6,9 @@
 //  Copyright © 2018 Winston Maragh. All rights reserved.
 //
 
-
 import Foundation
 import RealmSwift
+
 
 class RealmService {
     
@@ -24,8 +24,8 @@ class RealmService {
                 realm.add(realmObject)
             }
         } catch {
-            print("Realm Error: ", error)
-            print("Realm Error Description: ", error.localizedDescription)
+            print("Realm Create Error: ", error)
+            print("Realm Create Error Description: ", error.localizedDescription)
         }
     }
     
@@ -43,8 +43,8 @@ class RealmService {
                 }
             }
         } catch {
-            print("Realm Error: ", error)
-            print("Realm Error Description: ", error.localizedDescription)
+            print("Realm Update Error: ", error)
+            print("Realm Update Error Description: ", error.localizedDescription)
         }
     }
     
@@ -55,11 +55,7 @@ class RealmService {
                 realm.delete(realmObject)
             }
         } catch {
-            print("Realm Error: ", error)
-            print("Realm Error Description: ", error.localizedDescription)        }
+            print("Realm Delete Error: ", error)
+            print("Realm Delete Error Description: ", error.localizedDescription)        }
     }
-    
-    
 }
-
-
