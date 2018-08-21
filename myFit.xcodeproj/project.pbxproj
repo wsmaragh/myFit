@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230E791C212C396E00C07D25 /* USDAFoodAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E791B212C396E00C07D25 /* USDAFoodAPIService.swift */; };
+		230E791E212C39A600C07D25 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E791D212C39A600C07D25 /* APIKeys.swift */; };
+		230E7920212C3DFA00C07D25 /* USDA_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E791F212C3DFA00C07D25 /* USDA_List.swift */; };
+		230E7922212C3E1E00C07D25 /* USDA_Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7921212C3E1E00C07D25 /* USDA_Report.swift */; };
+		230E7924212C409500C07D25 /* USDA_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7923212C409500C07D25 /* USDA_Search.swift */; };
 		2315581520FC331700CDEFB4 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315581420FC331700CDEFB4 /* RealmService.swift */; };
 		234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020372125DF8E008BFB27 /* WorkoutViewModel.swift */; };
 		2340203A2125DFC1008BFB27 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020392125DFC1008BFB27 /* WorkoutVC.swift */; };
@@ -49,6 +54,11 @@
 
 /* Begin PBXFileReference section */
 		169FC6C19A54AD2CAE5AB4E0 /* Pods-myFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myFit/Pods-myFit.debug.xcconfig"; sourceTree = "<group>"; };
+		230E791B212C396E00C07D25 /* USDAFoodAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDAFoodAPIService.swift; sourceTree = "<group>"; };
+		230E791D212C39A600C07D25 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		230E791F212C3DFA00C07D25 /* USDA_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_List.swift; sourceTree = "<group>"; };
+		230E7921212C3E1E00C07D25 /* USDA_Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Report.swift; sourceTree = "<group>"; };
+		230E7923212C409500C07D25 /* USDA_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Search.swift; sourceTree = "<group>"; };
 		2315581420FC331700CDEFB4 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		234020372125DF8E008BFB27 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		234020392125DFC1008BFB27 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
@@ -248,10 +258,15 @@
 		8168699720BEF4CA00294B42 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				230E791D212C39A600C07D25 /* APIKeys.swift */,
 				23E2E3B12124B8CF00DC1D2F /* Enums.swift */,
 				236B8F442124B67C002612E7 /* Workout.swift */,
 				236B8F3F2124AFE9002612E7 /* Exercise.swift */,
 				8170BC6C20C711CA00FA928E /* BMI.swift */,
+				230E791B212C396E00C07D25 /* USDAFoodAPIService.swift */,
+				230E791F212C3DFA00C07D25 /* USDA_List.swift */,
+				230E7921212C3E1E00C07D25 /* USDA_Report.swift */,
+				230E7923212C409500C07D25 /* USDA_Search.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -435,10 +450,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230E791E212C39A600C07D25 /* APIKeys.swift in Sources */,
 				81A8F51020BF6AAE00F62A37 /* ChatsVC.swift in Sources */,
 				816869A620BEFD3A00294B42 /* OnboardingSlide.swift in Sources */,
 				2340203C2125DFF1008BFB27 /* CreateWorkoutVC.swift in Sources */,
+				230E7920212C3DFA00C07D25 /* USDA_List.swift in Sources */,
 				8170BC6D20C711CA00FA928E /* BMI.swift in Sources */,
+				230E7922212C3E1E00C07D25 /* USDA_Report.swift in Sources */,
 				234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */,
 				234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */,
 				816869A420BEFC8900294B42 /* OnboardingVC.swift in Sources */,
@@ -453,6 +471,7 @@
 				81A8F51B20BFA29000F62A37 /* HeaderCell.swift in Sources */,
 				81A8F51D20C0018E00F62A37 /* FoodCell.swift in Sources */,
 				236B8F452124B67C002612E7 /* Workout.swift in Sources */,
+				230E791C212C396E00C07D25 /* USDAFoodAPIService.swift in Sources */,
 				236B8F3E2124AEDB002612E7 /* BodyPartVC.swift in Sources */,
 				8128C2F2209532CE0088F28D /* AppDelegate.swift in Sources */,
 				234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */,
@@ -461,6 +480,7 @@
 				816869A220BEFC7500294B42 /* JoinVC.swift in Sources */,
 				81A33D6720BF211C0084CC6E /* EventsVC.swift in Sources */,
 				81793CE520C17FB700F238D0 /* CustomButtom.swift in Sources */,
+				230E7924212C409500C07D25 /* USDA_Search.swift in Sources */,
 				81A33D6120BF20EF0084CC6E /* ExerciseVC.swift in Sources */,
 				816869A820BEFDB000294B42 /* Extensions.swift in Sources */,
 				8170BC6B20C5D81800FA928E /* WorkoutCell.swift in Sources */,
