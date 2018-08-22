@@ -10,12 +10,12 @@ import Foundation
 import RealmSwift
 
 
-@objcMembers class Workout: Object, Codable {
+@objcMembers class Workout: Object {
     
     dynamic var name: String = ""
-    var exercises: [Exercise] = []
-//    var duration: Int
-    var imageStr: String?
+    dynamic var exercises: [Exercise] = []
+    dynamic var duration = RealmOptional<Int>()
+    dynamic var imageStr: String?
     var numOfExercises: Int { return exercises.count}
     
     convenience init(name: String, exercises: [Exercise], imageStr: String?) {

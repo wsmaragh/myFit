@@ -10,12 +10,12 @@ import UIKit
 import RealmSwift
 
 
-@objcMembers class Exercise: Object, Codable {
+@objcMembers class Exercise: Object {
     
     dynamic var name: String = ""
-    var desc: String = ""
-    var instructions: String = ""
-    var imageStr: String? = ""
+    dynamic var desc: String = ""
+    dynamic var instructions: String = ""
+    dynamic var imageStr: String? = ""
     //    var video: String?
     
     convenience init(name: String, desc: String, instructions: String, imageStr: String?){

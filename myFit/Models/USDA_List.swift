@@ -36,8 +36,8 @@ struct FoodItem: Codable {
 enum ListType: String {
     case food = "f"
     case foodGroup = "g"
-//    case derivationCodes = "d"
-//    case nutrients = "n"
-//    case specialityNutrients = "ns"
-//    case standardReleaseNutrients = "nr"
+    case derivationCodes = "d"
+    case nutrients = "n"
+    case specialityNutrients = "ns"
+    case standardReleaseNutrients = "nr"
 }

@@ -26,8 +26,8 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8gm-Qv-rRc" kind="relationship" relationship="viewControllers" id="QrV-rm-yr1"/>
                         <segue destination="Ppn-DD-XfA" kind="relationship" relationship="viewControllers" id="0zK-Jm-dLM"/>
+                        <segue destination="8gm-Qv-rRc" kind="relationship" relationship="viewControllers" id="QrV-rm-yr1"/>
                         <segue destination="ehg-Ea-JNw" kind="relationship" relationship="viewControllers" id="J2H-LJ-fVL"/>
                         <segue destination="hjy-F7-fc6" kind="relationship" relationship="viewControllers" id="cUF-7Y-814"/>
                     </connections>
