@@ -4,10 +4,18 @@
     </p> 
 </a>
 
+[![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
+
+<img src="https://github.com/wsmaragh/myFit/Resources/Pictures.xcassets/appFlow1.imageset/appFlow1.png" width="960" style="max-width:100%;">
+<img src="https://github.com/wsmaragh/myFit/Resources/Pictures.xcassets/appFlow2.imageset/appFlow2.png" width="960" style="max-width:100%;">
+<img src="https://github.com/wsmaragh/myFit/Resources/Pictures.xcassets/appFlow3.imageset/appFlow3.png" width="440" style="max-width:100%;">
+
 ## Designing & Planning
 <p align="center">
   <img src="https://i.imgur.com/dCnKByw.jpg" width="600">
 </p>
+
+
 
 
 ## Features:
