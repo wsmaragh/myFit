@@ -14,10 +14,11 @@ class WorkoutCell: UICollectionViewCell {
 	@IBOutlet weak var workoutLabel: UILabel!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    
-    func configureCell(workout: Workout) {
+    static let id = "WorkoutCell"
+
+    func configureCell(workout: Routine) {
         workoutLabel.text = workout.name
-        //image
+        
         guard let imageStr = workout.imageStr else {return}
         spinner.startAnimating()
         spinner.isHidden = false
@@ -32,6 +33,7 @@ class WorkoutCell: UICollectionViewCell {
                 self?.spinner.isHidden = true
             }
         }
+        
 	}
 
 }

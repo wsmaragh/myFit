@@ -23,13 +23,14 @@ class BMI {
         self.gender = gender
     }
     
-    private func getAgeFromDOB(dob: String) -> Int {
-        //TODO: calculate
-        return 1
+    private func getAgeFromDOB(dob: Date) -> Int {
+        return dob.age
     }
     
     private func getBMI(weight: Double, height: Double, age: Int, gender: Gender) -> (bmi: Double, descr: String){
+        
         var result: (Double, String) = (0.0, "")
+        
         //TODO: calculate BMI
         let bmi: Double = ((weight) / (height * height)) * 703
         var descr: String = "normal"
@@ -42,7 +43,9 @@ class BMI {
         case 40...60: descr = "morbidly obese"
         default: descr = "normal"
         }
+        
         result = (bmi, descr)
+        
         return result
     }
     

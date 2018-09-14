@@ -9,13 +9,13 @@
 import UIKit
 
 
-class ExerciseViewModel: NSObject {
-    
-    weak var exerciseVC: ExerciseVC?
-    
-    init(controller: ExerciseVC) {
-        self.exerciseVC = controller
-    }
-    
-}
+//class ExerciseViewModel: NSObject {
+//    
+//    weak var exerciseVC: RoutinesVC?
+//    
+//    init(controller: RoutinesVC) {
+//        self.exerciseVC = controller
+//    }
+//    
+//}
 

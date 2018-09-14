@@ -13,10 +13,11 @@ class FoodCell: UITableViewCell {
 	@IBOutlet weak var foodImage: UIImageView!
 	@IBOutlet weak var foodLabel: UILabel!
 
-	func configureCell(image: UIImage, foodName: String, quantity: Int, calories: Int){
-		foodImage.image = image
-		let totalCalories = quantity * calories
-		foodLabel.text = "\(foodName) (\(quantity)): \(totalCalories)"
+    static let id = "FoodCell"
+
+    func configureCell(food: SampleFood){
+        foodImage.image = food.image
+        foodLabel.text = food.name
 	}
 
 }

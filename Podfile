@@ -6,7 +6,5 @@ target 'myFit' do
   use_frameworks!
 
   # Pods for myFit
-    pod 'RealmSwift'
-    pod 'Kingfisher'
     pod 'Alamofire'
 end

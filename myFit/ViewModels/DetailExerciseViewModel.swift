@@ -9,12 +9,12 @@
 import UIKit
 
 
-class DetailExerciseViewModel: NSObject {
-    
-    weak var detailExerciseVC: DetailExerciseVC?
-    
-    init(controller: DetailExerciseVC) {
-        self.detailExerciseVC = controller
-    }
-    
-}
+//class DetailExerciseViewModel: NSObject {
+//
+//    weak var detailExerciseVC: ExerciseDetailVC?
+//
+//    init(controller: ExerciseDetailVC) {
+//        self.detailExerciseVC = controller
+//    }
+//
+//}

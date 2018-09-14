@@ -9,7 +9,6 @@
 import Foundation
 
 
-
 //  USDA List - request a list of foods, nutrients or food groups.
 //  documentation: https://ndb.nal.usda.gov/ndb/doc/apilist/API-LIST.md
 
