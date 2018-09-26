@@ -26,11 +26,11 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 		super.viewDidLoad()
 		//			AuthUserService.manager.signOut()
         navigationController?.navigationBar.isHidden = true
-//        slideScrollView.delegate = self
-//        slides = createSlides()
-//        addSlidesToScrollView(slides: slides)
-//        setupPageControl()
-//        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(changeSlide), userInfo: nil, repeats: true)
+        slideScrollView.delegate = self
+        slides = createSlides()
+        addSlidesToScrollView(slides: slides)
+        setupPageControl()
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(changeSlide), userInfo: nil, repeats: true)
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -59,9 +59,9 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 
     func createSlides() -> [UIView] {
 //        let slide1 = WelcomeLogoSlide()
-        let slide2 = OnboardingSlide(title: "Bond over Workout", details: "Start with a simple meal and build from there.", picture: #imageLiteral(resourceName: "fullChart"))
-        let slide3 = OnboardingSlide(title: "Companionship", details: "Why eat alone, when you can also meet your soulmate", picture: #imageLiteral(resourceName: "lowerChart"))
-        let slide4 = OnboardingSlide(title: "Plan a Workout in app", details: "Exploring new workouts...", picture: #imageLiteral(resourceName: "coreChart"))
+        let slide2 = OnboardingSlide(title: "Bond over Workout", details: "Start with a simple meal and build from there.", picture: #imageLiteral(resourceName: "bgOnBars"))
+        let slide3 = OnboardingSlide(title: "Companionship", details: "Why eat alone, when you can also meet your soulmate", picture: #imageLiteral(resourceName: "workout5"))
+        let slide4 = OnboardingSlide(title: "Plan a Workout in app", details: "Exploring new workouts...", picture: #imageLiteral(resourceName: "workout4"))
         return [slide2, slide3, slide4]
     }
 
@@ -78,7 +78,7 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
     func setupPageControl(){
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
-        view.bringSubview(toFront: pageControl)
+        view.bringSubviewToFront(pageControl)
     }
 
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -97,7 +97,7 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 		let shade = UIView(frame: self.view.frame)
 		shade.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
 		view.addSubview(shade)
-		view.sendSubview(toBack: shade)
+		view.sendSubviewToBack(shade)
 
 		//AV Player
 		var avPlayer = AVPlayer()
@@ -105,7 +105,7 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 		let avPlayerLayer = AVPlayerLayer(player: avPlayer)
 		avPlayerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
 		avPlayer.volume = 0
-		avPlayer.actionAtItemEnd = AVPlayerActionAtItemEnd.none
+		avPlayer.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
 		avPlayerLayer.frame = view.layer.bounds
 
 		//UIView Layer for Video
@@ -113,7 +113,7 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 		view.backgroundColor = UIColor.clear
 		view.layer.insertSublayer(avPlayerLayer, at: 0)
 		view.addSubview(layer)
-		view.sendSubview(toBack: layer)
+		view.sendSubviewToBack(layer)
 
 		//Notification
 		NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishedPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayer.currentItem)
@@ -124,7 +124,7 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 
 	@objc func playerDidFinishedPlaying(notification: NSNotification) {
 		if let player = notification.object as? AVPlayerItem {
-			player.seek(to: kCMTimeZero, completionHandler: nil)
+			player.seek(to: CMTime.zero, completionHandler: nil)
 		}
 	}
 

@@ -15,6 +15,8 @@
 		234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B02125BB6500409C23 /* ExerciseViewModel.swift */; };
 		234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */; };
 		236B8F402124AFE9002612E7 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F3F2124AFE9002612E7 /* Exercise.swift */; };
+		2377DDF62152DD5F00D1737E /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377DDF52152DD5F00D1737E /* Landing.storyboard */; };
+		2377DDF82152DD9000D1737E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DDF72152DD9000D1737E /* Date+.swift */; };
 		23A96082214B604E00FA0336 /* MyExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96077214B604C00FA0336 /* MyExercises.swift */; };
 		23A96083214B604E00FA0336 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96078214B604C00FA0336 /* Routine.swift */; };
 		23A96084214B604E00FA0336 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96079214B604D00FA0336 /* Recipe.swift */; };
@@ -83,10 +85,10 @@
 		23A96121214B68D000FA0336 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96111214B68CF00FA0336 /* ExerciseCell.swift */; };
 		23A96122214B68D000FA0336 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96112214B68CF00FA0336 /* RecipeCell.swift */; };
 		23A96123214B68D000FA0336 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96113214B68CF00FA0336 /* ArticleCell.swift */; };
-		23A96129214B6AE200FA0336 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A96128214B6AE200FA0336 /* Landing.storyboard */; };
 		23A9612C214B6E1600FA0336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9612A214B6E1600FA0336 /* LaunchScreen.storyboard */; };
 		23A9612D214B6E1600FA0336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9612B214B6E1600FA0336 /* Main.storyboard */; };
 		23A9612F214B70C700FA0336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9612E214B70C700FA0336 /* AppDelegate.swift */; };
+		23ADE1CC2151B39000D6609C /* FacebookLoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */; };
 		800E46A990C8789D94F0BA43 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0AA389526F60A5F5C5608 /* Pods_myFit.framework */; };
 		8168699320BEF48D00294B42 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8168699220BEF48D00294B42 /* LaunchImages.xcassets */; };
 		8170BC6D20C711CA00FA928E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6C20C711CA00FA928E /* BMI.swift */; };
@@ -103,6 +105,8 @@
 		234325B02125BB6500409C23 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewModel.swift; sourceTree = "<group>"; };
 		236B8F3F2124AFE9002612E7 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		2377DDF52152DD5F00D1737E /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		2377DDF72152DD9000D1737E /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		23A96077214B604C00FA0336 /* MyExercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExercises.swift; sourceTree = "<group>"; };
 		23A96078214B604C00FA0336 /* Routine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		23A96079214B604D00FA0336 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -173,11 +177,10 @@
 		23A96112214B68CF00FA0336 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		23A96113214B68CF00FA0336 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		23A96124214B6A2400FA0336 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23A96126214B6A5B00FA0336 /* newStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = newStoryboard.storyboard; path = myFit/SupportingFiles/newStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
-		23A96128214B6AE200FA0336 /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Landing.storyboard; path = myFit/SupportingFiles/Landing.storyboard; sourceTree = SOURCE_ROOT; };
 		23A9612A214B6E1600FA0336 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A9612B214B6E1600FA0336 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		23A9612E214B70C700FA0336 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginServices.swift; sourceTree = "<group>"; };
 		3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myFit.framework; path = "../Debug-iphonesimulator/Pods_myFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8128C2EE209532CE0088F28D /* myFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8168699220BEF48D00294B42 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
@@ -231,6 +234,20 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		23B544BD2151F21300FF921F /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				23A960D0214B628700FA0336 /* Extensions.swift */,
+				23A960D5214B628700FA0336 /* CustomButtom.swift */,
+				23A960CE214B628700FA0336 /* CustomLabel.swift */,
+				23A960D2214B628700FA0336 /* CustomView.swift */,
+				23A960D1214B628700FA0336 /* CustomTextField.swift */,
+				23A960D3214B628700FA0336 /* CustomImageView.swift */,
+				2377DDF72152DD9000D1737E /* Date+.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
 		8128C2E5209532CE0088F28D = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +269,8 @@
 		8128C2F0209532CE0088F28D /* myFit */ = {
 			isa = PBXGroup;
 			children = (
-				8168699820BEF4E300294B42 /* SupportingFiles */,
+				8168699820BEF4E300294B42 /* Supporting */,
+				23B544BD2151F21300FF921F /* Customs */,
 				234020362125D7A7008BFB27 /* Resources */,
 				81A8F51520BF704100F62A37 /* Services */,
 				8168699720BEF4CA00294B42 /* Models */,
@@ -266,18 +284,18 @@
 		8168699520BEF4B600294B42 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				23A960F1214B67CF00FA0336 /* BodyPartVC.swift */,
-				23A960EE214B67CF00FA0336 /* ChatVC.swift */,
-				23A960ED214B67CF00FA0336 /* CreateWorkoutVC.swift */,
-				23A960F5214B67D000FA0336 /* DietVC.swift */,
-				23A960F4214B67D000FA0336 /* ExerciseDetailVC.swift */,
-				23A960EC214B67CF00FA0336 /* FindVC.swift */,
-				23A960F3214B67D000FA0336 /* JoinVC.swift */,
+				23A960F2214B67D000FA0336 /* OnboardingSlide.swift */,
 				23A960EF214B67CF00FA0336 /* LandingVC.swift */,
 				23A960EB214B67CF00FA0336 /* LoginVC.swift */,
-				23A960F2214B67D000FA0336 /* OnboardingSlide.swift */,
-				23A960F6214B67D000FA0336 /* RoutinesVC.swift */,
+				23A960F3214B67D000FA0336 /* JoinVC.swift */,
+				23A960F5214B67D000FA0336 /* DietVC.swift */,
 				23A960F0214B67CF00FA0336 /* WorkoutVC.swift */,
+				23A960F1214B67CF00FA0336 /* BodyPartVC.swift */,
+				23A960F6214B67D000FA0336 /* RoutinesVC.swift */,
+				23A960F4214B67D000FA0336 /* ExerciseDetailVC.swift */,
+				23A960ED214B67CF00FA0336 /* CreateWorkoutVC.swift */,
+				23A960EC214B67CF00FA0336 /* FindVC.swift */,
+				23A960EE214B67CF00FA0336 /* ChatVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,9 +330,9 @@
 		8168699720BEF4CA00294B42 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				23A9607A214B604D00FA0336 /* DatabaseJSON.swift */,
 				23A96081214B604E00FA0336 /* Article.swift */,
 				23A96080214B604E00FA0336 /* Business.swift */,
-				23A9607A214B604D00FA0336 /* DatabaseJSON.swift */,
 				23A9607D214B604D00FA0336 /* EBEvent.swift */,
 				23A9607F214B604D00FA0336 /* ExerciseList.swift */,
 				23A9607B214B604D00FA0336 /* Food.swift */,
@@ -332,25 +350,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		8168699820BEF4E300294B42 /* SupportingFiles */ = {
+		8168699820BEF4E300294B42 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				23A96124214B6A2400FA0336 /* Info.plist */,
 				23A9612E214B70C700FA0336 /* AppDelegate.swift */,
 				23A9612A214B6E1600FA0336 /* LaunchScreen.storyboard */,
+				2377DDF52152DD5F00D1737E /* Landing.storyboard */,
 				23A9612B214B6E1600FA0336 /* Main.storyboard */,
-				23A96128214B6AE200FA0336 /* Landing.storyboard */,
-				23A96126214B6A5B00FA0336 /* newStoryboard.storyboard */,
-				23A96124214B6A2400FA0336 /* Info.plist */,
 				23A960D4214B628700FA0336 /* APIKeys.swift */,
-				23A960D5214B628700FA0336 /* CustomButtom.swift */,
-				23A960D3214B628700FA0336 /* CustomImageView.swift */,
-				23A960CE214B628700FA0336 /* CustomLabel.swift */,
-				23A960D1214B628700FA0336 /* CustomTextField.swift */,
-				23A960D2214B628700FA0336 /* CustomView.swift */,
 				23A960CF214B628700FA0336 /* Enums.swift */,
-				23A960D0214B628700FA0336 /* Extensions.swift */,
 			);
-			path = SupportingFiles;
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 		81A8F51520BF704100F62A37 /* Services */ = {
@@ -370,6 +381,7 @@
 				23A9608F214B60A500FA0336 /* UserPreferenceService.swift */,
 				23A96099214B60A600FA0336 /* YelpEventAPIService.swift */,
 				2315581420FC331700CDEFB4 /* RealmService.swift */,
+				23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -417,6 +429,7 @@
 				TargetAttributes = {
 					8128C2ED209532CE0088F28D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -447,8 +460,8 @@
 				23A960B1214B60EA00FA0336 /* JoinBio.xib in Resources */,
 				23A960C9214B623C00FA0336 /* Colors.xcassets in Resources */,
 				23A960B3214B60EA00FA0336 /* JoinFinal.xib in Resources */,
-				23A96129214B6AE200FA0336 /* Landing.storyboard in Resources */,
 				23A9612D214B6E1600FA0336 /* Main.storyboard in Resources */,
+				2377DDF62152DD5F00D1737E /* Landing.storyboard in Resources */,
 				23A9612C214B6E1600FA0336 /* LaunchScreen.storyboard in Resources */,
 				23A960B5214B60EA00FA0336 /* JoinHabits.xib in Resources */,
 				23A960CA214B623C00FA0336 /* Pictures.xcassets in Resources */,
@@ -548,6 +561,7 @@
 				23A9612F214B70C700FA0336 /* AppDelegate.swift in Sources */,
 				23A9608A214B604E00FA0336 /* ExerciseList.swift in Sources */,
 				23A960D9214B628700FA0336 /* CustomTextField.swift in Sources */,
+				23ADE1CC2151B39000D6609C /* FacebookLoginServices.swift in Sources */,
 				23A960FD214B67D000FA0336 /* WorkoutVC.swift in Sources */,
 				23A96122214B68D000FA0336 /* RecipeCell.swift in Sources */,
 				234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */,
@@ -563,6 +577,7 @@
 				23A9609D214B60A600FA0336 /* EBEventAPIService.swift in Sources */,
 				23A96114214B68D000FA0336 /* dHoldingCell.swift in Sources */,
 				23A9611F214B68D000FA0336 /* FoodCell.swift in Sources */,
+				2377DDF82152DD9000D1737E /* Date+.swift in Sources */,
 				23A96120214B68D000FA0336 /* GymCell.swift in Sources */,
 				23A960A4214B60A600FA0336 /* USDAFoodAPIService.swift in Sources */,
 				23A960A2214B60A600FA0336 /* FoodAPIService.swift in Sources */,
@@ -702,14 +717,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DRF3BB53BA;
-				INFOPLIST_FILE = "$(SRCROOT)/myFit/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/myFit/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WinstonMaragh.Fit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -722,14 +737,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DRF3BB53BA;
-				INFOPLIST_FILE = "$(SRCROOT)/myFit/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/myFit/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WinstonMaragh.Fit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

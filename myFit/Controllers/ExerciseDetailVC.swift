@@ -41,7 +41,8 @@ class ExerciseDetailVC: UIViewController {
     }
     
     func addVideoToViewView(){
-        guard let videoURL = Bundle.main.url(forResource: exercise.videoStr, withExtension: "mp4") else {print("Error with video"); return}
+        guard let videoURL = Bundle.main.url(forResource: "abs", withExtension: "mp4") else {print("Error with video"); return}
+//        guard let videoURL = Bundle.main.url(forResource: exercise.videoStr, withExtension: "mp4") else {print("Error with video"); return}
         self.player = AVPlayer(url: videoURL)
         player?.volume = 0.001
         let layer: AVPlayerLayer = AVPlayerLayer(player: player)

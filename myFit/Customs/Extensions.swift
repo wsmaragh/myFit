@@ -79,7 +79,7 @@ extension UIViewController {
 extension UITextField {
     
 	func underlined(color: UIColor){
-		self.borderStyle = UITextBorderStyle.none
+		self.borderStyle = UITextField.BorderStyle.none
 		self.backgroundColor = UIColor.clear
 		let border = CALayer()
 		let width = CGFloat(1.0)
@@ -91,7 +91,7 @@ extension UITextField {
 	}
     
     func setBottomLine(color: UIColor) {
-        self.borderStyle = UITextBorderStyle.none
+        self.borderStyle = UITextField.BorderStyle.none
         self.backgroundColor = UIColor.clear
         
         let borderLine = UIView()

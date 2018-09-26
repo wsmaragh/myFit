@@ -38,8 +38,8 @@ class LocationService: NSObject {
                 
             case .denied:
                 status = CLAuthorizationStatus.denied
-                guard let validSettingsURL: URL = URL(string: UIApplicationOpenSettingsURLString) else {return status}
-                UIApplication.shared.open(validSettingsURL, options: [:], completionHandler: nil)
+                guard let validSettingsURL: URL = URL(string: UIApplication.openSettingsURLString) else {return status}
+                UIApplication.shared.open(validSettingsURL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
                 
             case .authorizedWhenInUse:
                 status = CLAuthorizationStatus.authorizedWhenInUse
@@ -49,8 +49,8 @@ class LocationService: NSObject {
                 
             case .restricted:
                 status = CLAuthorizationStatus.restricted
-                guard let validSettingsURL: URL = URL(string: UIApplicationOpenSettingsURLString) else {return status}
-                UIApplication.shared.open(validSettingsURL, options: [:], completionHandler: nil)
+                guard let validSettingsURL: URL = URL(string: UIApplication.openSettingsURLString) else {return status}
+                UIApplication.shared.open(validSettingsURL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
             }
         }
 
@@ -117,3 +117,8 @@ extension LocationService: CLLocationManagerDelegate {
     
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
+}

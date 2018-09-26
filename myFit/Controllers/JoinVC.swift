@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JoinVC: UIViewController, UIScrollViewDelegate {
+class JoinVC: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -31,44 +31,10 @@ class JoinVC: UIViewController, UIScrollViewDelegate {
 
     }
 
-
-//    {
-//        print("Worked")
-//
-////        .loadNibNamed("JoinBio", owner: self, options: nil)?.first as? JoinBio {
-////        scrollView.addSubview(view1)
-//    } else {
-//    print("Failed")
-//    }
-    
     
 	@IBAction func dismissView(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)        
 	}
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let currentPage = scrollView.contentOffset.x / scrollView.frame.size.width
-        slideIndex = Int(currentPage)
-    }
-    
-//    @objc func changeSlide() {
-//        slideIndex += 1
-//        if slideIndex < self.slides.count {
-//            slideScrollView.scrollRectToVisible(slides[slideIndex].frame, animated: true)
-//        }
-//        else {
-//            slideIndex = 0
-//            slideScrollView.scrollRectToVisible(slides[slideIndex].frame, animated: true)
-//        }
-//    }
-    
-//    override func awakeFromNib() {
-//
-//
-//        self.scrollView.contentSize = joinBio.frame.size
-//        self.scrollView.addSubview(joinBio)
-//        return;
-//    }
     
     
     func addSlidesToScrollView(slides: [UIView]) {
@@ -83,4 +49,15 @@ class JoinVC: UIViewController, UIScrollViewDelegate {
     }
     
 
+}
+
+
+
+extension JoinVC: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let currentPage = scrollView.contentOffset.x / scrollView.frame.size.width
+        slideIndex = Int(currentPage)
+    }
+    
 }

@@ -68,7 +68,7 @@ class FindVC: UIViewController {
         let defaultCoordinate = CLLocationCoordinate2DMake(UserPreferenceService.shared.getLatitude(),UserPreferenceService.shared.getLongitude())
         mapView.setCenter(defaultCoordinate, animated: true)
         let span = MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
-        let region = MKCoordinateRegionMake(defaultCoordinate, span)
+        let region = MKCoordinateRegion.init(center: defaultCoordinate, span: span)
         mapView.setRegion(region, animated: true)
     }
     
