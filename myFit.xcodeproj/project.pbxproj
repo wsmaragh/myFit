@@ -96,6 +96,8 @@
 		23B4F9C12163DF40002D8C3D /* workout.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9BB2163DF40002D8C3D /* workout.gif */; };
 		23B4F9C22163DF40002D8C3D /* find.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9BC2163DF40002D8C3D /* find.gif */; };
 		23B4F9C42163F2DB002D8C3D /* USDA_FoodReportV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4F9C32163F2DB002D8C3D /* USDA_FoodReportV2.swift */; };
+		23B4F9C82163FCC1002D8C3D /* CollapsibleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4F9C72163FCC1002D8C3D /* CollapsibleHeader.swift */; };
+		23B4F9CA2164026B002D8C3D /* FoodSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4F9C92164026B002D8C3D /* FoodSection.swift */; };
 		800E46A990C8789D94F0BA43 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0AA389526F60A5F5C5608 /* Pods_myFit.framework */; };
 		8168699320BEF48D00294B42 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8168699220BEF48D00294B42 /* LaunchImages.xcassets */; };
 		8170BC6D20C711CA00FA928E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6C20C711CA00FA928E /* BMI.swift */; };
@@ -195,6 +197,8 @@
 		23B4F9BB2163DF40002D8C3D /* workout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = workout.gif; sourceTree = "<group>"; };
 		23B4F9BC2163DF40002D8C3D /* find.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = find.gif; sourceTree = "<group>"; };
 		23B4F9C32163F2DB002D8C3D /* USDA_FoodReportV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_FoodReportV2.swift; sourceTree = "<group>"; };
+		23B4F9C72163FCC1002D8C3D /* CollapsibleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleHeader.swift; sourceTree = "<group>"; };
+		23B4F9C92164026B002D8C3D /* FoodSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSection.swift; sourceTree = "<group>"; };
 		3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myFit.framework; path = "../Debug-iphonesimulator/Pods_myFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8128C2EE209532CE0088F28D /* myFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8168699220BEF48D00294B42 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
@@ -349,6 +353,7 @@
 				23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */,
 				23A96111214B68CF00FA0336 /* ExerciseCell.swift */,
 				23A9610F214B68CF00FA0336 /* FoodCell.swift */,
+				23B4F9C72163FCC1002D8C3D /* CollapsibleHeader.swift */,
 				23A96106214B68CE00FA0336 /* HeaderCell.swift */,
 				23A96112214B68CF00FA0336 /* RecipeCell.swift */,
 				23A96108214B68CE00FA0336 /* ParkCell.swift */,
@@ -376,6 +381,7 @@
 				236B8F3F2124AFE9002612E7 /* Exercise.swift */,
 				23A9607F214B604D00FA0336 /* ExerciseList.swift */,
 				8170BC6C20C711CA00FA928E /* BMI.swift */,
+				23B4F9C92164026B002D8C3D /* FoodSection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -616,11 +622,13 @@
 				23A9608C214B604E00FA0336 /* Article.swift in Sources */,
 				23A960FE214B67D000FA0336 /* BodyPartVC.swift in Sources */,
 				230E7924212C409500C07D25 /* USDA_FoodSearch.swift in Sources */,
+				23B4F9C82163FCC1002D8C3D /* CollapsibleHeader.swift in Sources */,
 				23A9611D214B68D000FA0336 /* BodyPartHoldingCell.swift in Sources */,
 				23A96102214B67D000FA0336 /* DietVC.swift in Sources */,
 				23A96118214B68D000FA0336 /* ParkCell.swift in Sources */,
 				23A9609D214B60A600FA0336 /* EBEventAPIService.swift in Sources */,
 				23A96114214B68D000FA0336 /* ArticleHoldingCell.swift in Sources */,
+				23B4F9CA2164026B002D8C3D /* FoodSection.swift in Sources */,
 				23A9611F214B68D000FA0336 /* FoodCell.swift in Sources */,
 				2377DDF82152DD9000D1737E /* Date+.swift in Sources */,
 				23A96120214B68D000FA0336 /* GymCell.swift in Sources */,

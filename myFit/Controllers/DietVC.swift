@@ -19,6 +19,7 @@ class DietVC: UIViewController {
     }
     
 	let sectionTitles: [String] = ["Breakfast", "Lunch", "Dinner", "Snacks", "Liquids"]
+//    let sections :
     
     var recipes = [Recipe]() {
         didSet {
@@ -94,15 +95,31 @@ extension DietVC: UITableViewDataSource, UITableViewDelegate {
 		return sectionTitles.count
 	}
 
-	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-		let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCell.id) as! HeaderCell
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCell.id) as! HeaderCell
         cell.configureCell(headerLabelStr: sectionTitles[section])
-		return cell
-	}
+        return cell
+    }
 
-	func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-		return 35
-	}
+    // Header
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: CollapsibleHeader.id) as? CollapsibleHeader ?? CollapsibleHeader(reuseIdentifier: CollapsibleHeader.id)
+        let section = sectionTitles[section]
+        header.configureCell(section: section)
+        header.setCollapsed(sections[section].collapsed)
+        header.section = section
+        header.delegate = self
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1.0
+    }
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {

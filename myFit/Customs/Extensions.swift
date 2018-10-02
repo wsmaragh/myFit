@@ -63,7 +63,6 @@ extension UIColor {
 		self.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
 	}
     
-    
 }
 
 // MARK:- UIViewController
@@ -231,5 +230,14 @@ extension UIImage {
 	}
 }
 
-
+extension UIView {
+    func rotate(_ toValue: CGFloat, duration: CFTimeInterval = 0.2) {
+        let animation = CABasicAnimation(keyPath: "transform.rotation")
+        animation.toValue = toValue
+        animation.duration = duration
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        self.layer.add(animation, forKey: nil)
+    }
+}
 
