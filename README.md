@@ -6,7 +6,13 @@
 
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
 
+![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/login.gif)
+![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/workout.gif)
+![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/routine.gif)
+![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/exercises.gif)
 ![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/diet.gif)
+![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/find.gif)
+
 
 
 <img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/appFlow1.imageset/appFlow1.png"
