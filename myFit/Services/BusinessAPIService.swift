@@ -22,7 +22,7 @@ class BusinessAPIService {
     private init(){}
     static let shared = BusinessAPIService()
     
-    func getBusiness(category: YelpCategory, completion: @escaping ([Business]) -> Void) {
+    func getBusiness(category: YelpCategory, completion: @escaping ([YelpBusiness]) -> Void) {
         
         let url = "https://api.yelp.com/v3/businesses/search?latitude=\(UserPreferenceService.shared.getLatitude())&longitude=\(UserPreferenceService.shared.getLongitude())&limit=50&radius=16000&categories=\(category.rawValue)"
         

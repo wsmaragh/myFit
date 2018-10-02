@@ -18,7 +18,10 @@ class FindVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapOrListButton: UIBarButtonItem!
     
-
+    deinit {
+        
+    }
+    
     enum SearchCriteria: String {
         case Events = "Events"
         case Gym = "Gym"
@@ -31,7 +34,7 @@ class FindVC: UIViewController {
         }
     }
     
-    private var venues = [Business](){
+    private var venues = [YelpBusiness](){
         didSet {
             addAnnotationsToMap()
             tableView.reloadData()
@@ -47,7 +50,7 @@ class FindVC: UIViewController {
     
     private var annotations = [MKAnnotation]()
     
-    private var selectedVenue: Business?
+    private var selectedVenue: YelpBusiness?
     private var selectedEvent: YelpEvent?
 
     private var panGesture: UIPanGestureRecognizer!

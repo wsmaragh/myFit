@@ -18,17 +18,17 @@ struct EBEvent: Codable {
     let id: String
     let name: NameDict
     let description: DescriptionDict
-    let url: String // The URL to the event page for this event on Eventbrite
-    let start: StartDict? // The start time of the event
-    let end: EndDict? // The end time of the event
-    let status: String // canceled, live, started, ended, completed
-    let currency: String // The ISO 4217 currency code for this event
-    let online_event: Bool // If this event doesn’t have a venue and is only held online
-    let is_free: Bool // true or false
+    let url: String
+    let start: StartDict?
+    let end: EndDict?
+    let status: String
+    let currency: String
+    let online_event: Bool
+    let is_free: Bool
 }
 
 struct NameDict: Codable {
-    let text: String // "Wanderlust 108 Brooklyn 2018",
+    let text: String
 }
 
 struct DescriptionDict: Codable {
@@ -36,10 +36,18 @@ struct DescriptionDict: Codable {
 }
 
 struct StartDict: Codable {
-    let local: String // "2018-09-09T07:30:00"
+    let startTime: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case startTime = "local"
+    }
 }
 
 struct EndDict: Codable {
-    let local: String // "2018-09-09T15:00:00"
+    let endTime: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case endTime = "local"
+    }
 }
 

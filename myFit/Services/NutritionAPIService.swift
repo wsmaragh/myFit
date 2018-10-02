@@ -10,18 +10,17 @@ import Foundation
 import Alamofire
 
 
+// Full Nutritional Analysis (POST) - documentation: https://developer.edamam.com/edamam-docs-nutrition-api
 
 class NutritionAPIService {
     private init(){}
     static let shared = NutritionAPIService()
     
-
-    //  MARK: Full Nutritional Analysis (POST)
-    //  documentation: https://developer.edamam.com/edamam-docs-nutrition-api
-    // let baseURL = "https://api.edamam.com/api/nutrition-details"
+    let baseURL = "https://api.edamam.com/api/nutrition-details"
 
 
     // MARK: Nutrients (POST request)
+    
     
 //    // MARK: Food by UPC/Barcode
 //    func fetchFoodByUPC(with upc: String, completion: @escaping (Food) -> Void) {
@@ -50,7 +49,6 @@ class NutritionAPIService {
 //            }
 //        }
 //    }
-    
-    
+
 
 }

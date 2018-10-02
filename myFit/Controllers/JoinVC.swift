@@ -12,6 +12,9 @@ class JoinVC: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    deinit {
+        
+    }
     
 //    private var slides: [UIView] = [JoinBio(), JoinHabits(), JoinFinal()]
     private var slideIndex = 0

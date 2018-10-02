@@ -37,7 +37,7 @@ class RoutinesVC: UIViewController {
 	}
     
     deinit {
-        print("de-init: RoutinesVC - memory cleared")
+
     }
     
     private func setupTableView() {

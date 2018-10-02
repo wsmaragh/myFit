@@ -11,15 +11,14 @@ import UIKit
 
 class CreateWorkoutVC: UIViewController {
 
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
     deinit {
-        print("de-init: CreateWorkoutVC - memory cleared")
+
     }
 
 }

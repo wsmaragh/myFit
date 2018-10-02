@@ -17,7 +17,7 @@ class GymCell: UITableViewCell {
     
     static let id = "GymCell"
 
-    func configureCell(venue: Business){
+    func configureCell(venue: YelpBusiness){
         nameLabel.text = venue.name
         typeLabel.text = "\(venue.distance) meters away"
         addressLabel.text = "\(venue.location.address1 ?? ""), \(venue.location.city ?? "") \(venue.location.state ?? ""), \(venue.location.zip_code ?? "")"

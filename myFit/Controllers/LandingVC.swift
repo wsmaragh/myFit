@@ -17,10 +17,12 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 	@IBOutlet weak var loginButton: UIButton!
 	@IBOutlet weak var joinButton: UIButton!
 
-
+    deinit {
+        
+    }
+    
 	private var slides = [UIView]()
 	private var slideIndex = 0
-
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -58,11 +60,10 @@ class LandingVC: UIViewController, UIScrollViewDelegate {
 	}
 
     func createSlides() -> [UIView] {
-//        let slide1 = WelcomeLogoSlide()
-        let slide2 = OnboardingSlide(title: "Bond over Workout", details: "Start with a simple meal and build from there.", picture: #imageLiteral(resourceName: "bgOnBars"))
-        let slide3 = OnboardingSlide(title: "Companionship", details: "Why eat alone, when you can also meet your soulmate", picture: #imageLiteral(resourceName: "workout5"))
-        let slide4 = OnboardingSlide(title: "Plan a Workout in app", details: "Exploring new workouts...", picture: #imageLiteral(resourceName: "workout4"))
-        return [slide2, slide3, slide4]
+        let slide1 = OnboardingSlide(title: "Bond over Workout", details: "Start with a simple meal and build from there.", picture: #imageLiteral(resourceName: "bgOnBars"))
+        let slide2 = OnboardingSlide(title: "Companionship", details: "Why eat alone, when you can also meet your soulmate", picture: #imageLiteral(resourceName: "workout5"))
+        let slide3 = OnboardingSlide(title: "Plan a Workout in app", details: "Exploring new workouts...", picture: #imageLiteral(resourceName: "workout4"))
+        return [slide1, slide2, slide3]
     }
 
 	func addSlidesToScrollView(slides: [UIView]) {

@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230E7920212C3DFA00C07D25 /* USDA_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E791F212C3DFA00C07D25 /* USDA_List.swift */; };
-		230E7922212C3E1E00C07D25 /* USDA_Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7921212C3E1E00C07D25 /* USDA_Report.swift */; };
-		230E7924212C409500C07D25 /* USDA_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7923212C409500C07D25 /* USDA_Search.swift */; };
-		2315581520FC331700CDEFB4 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315581420FC331700CDEFB4 /* RealmService.swift */; };
+		230E7920212C3DFA00C07D25 /* USDA_FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E791F212C3DFA00C07D25 /* USDA_FoodList.swift */; };
+		230E7922212C3E1E00C07D25 /* USDA_FoodReportV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7921212C3E1E00C07D25 /* USDA_FoodReportV1.swift */; };
+		230E7924212C409500C07D25 /* USDA_FoodSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230E7923212C409500C07D25 /* USDA_FoodSearch.swift */; };
 		234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020372125DF8E008BFB27 /* WorkoutViewModel.swift */; };
 		234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B02125BB6500409C23 /* ExerciseViewModel.swift */; };
 		234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */; };
 		236B8F402124AFE9002612E7 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F3F2124AFE9002612E7 /* Exercise.swift */; };
 		2377DDF62152DD5F00D1737E /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377DDF52152DD5F00D1737E /* Landing.storyboard */; };
 		2377DDF82152DD9000D1737E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DDF72152DD9000D1737E /* Date+.swift */; };
-		23A96082214B604E00FA0336 /* MyExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96077214B604C00FA0336 /* MyExercises.swift */; };
 		23A96083214B604E00FA0336 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96078214B604C00FA0336 /* Routine.swift */; };
 		23A96084214B604E00FA0336 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96079214B604D00FA0336 /* Recipe.swift */; };
 		23A96085214B604E00FA0336 /* DatabaseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9607A214B604D00FA0336 /* DatabaseJSON.swift */; };
@@ -26,7 +24,7 @@
 		23A96088214B604E00FA0336 /* EBEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9607D214B604D00FA0336 /* EBEvent.swift */; };
 		23A96089214B604E00FA0336 /* YelpEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9607E214B604D00FA0336 /* YelpEvent.swift */; };
 		23A9608A214B604E00FA0336 /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9607F214B604D00FA0336 /* ExerciseList.swift */; };
-		23A9608B214B604E00FA0336 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96080214B604E00FA0336 /* Business.swift */; };
+		23A9608B214B604E00FA0336 /* YelpBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96080214B604E00FA0336 /* YelpBusiness.swift */; };
 		23A9608C214B604E00FA0336 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96081214B604E00FA0336 /* Article.swift */; };
 		23A9609A214B60A600FA0336 /* NutritionAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9608D214B60A500FA0336 /* NutritionAPIService.swift */; };
 		23A9609B214B60A600FA0336 /* DateFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9608E214B60A500FA0336 /* DateFormatterService.swift */; };
@@ -69,17 +67,17 @@
 		23A96101214B67D000FA0336 /* ExerciseDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960F4214B67D000FA0336 /* ExerciseDetailVC.swift */; };
 		23A96102214B67D000FA0336 /* DietVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960F5214B67D000FA0336 /* DietVC.swift */; };
 		23A96103214B67D000FA0336 /* RoutinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960F6214B67D000FA0336 /* RoutinesVC.swift */; };
-		23A96114214B68D000FA0336 /* dHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96104214B68CE00FA0336 /* dHoldingCell.swift */; };
+		23A96114214B68D000FA0336 /* ArticleHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96104214B68CE00FA0336 /* ArticleHoldingCell.swift */; };
 		23A96115214B68D000FA0336 /* BodyPartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96105214B68CE00FA0336 /* BodyPartCell.swift */; };
 		23A96116214B68D000FA0336 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96106214B68CE00FA0336 /* HeaderCell.swift */; };
-		23A96117214B68D000FA0336 /* bHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96107214B68CE00FA0336 /* bHoldingCell.swift */; };
+		23A96117214B68D000FA0336 /* MyWorkoutHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96107214B68CE00FA0336 /* MyWorkoutHoldingCell.swift */; };
 		23A96118214B68D000FA0336 /* ParkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96108214B68CE00FA0336 /* ParkCell.swift */; };
 		23A96119214B68D000FA0336 /* RoutineExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */; };
 		23A9611A214B68D000FA0336 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610A214B68CE00FA0336 /* WorkoutCell.swift */; };
-		23A9611B214B68D000FA0336 /* bCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610B214B68CE00FA0336 /* bCell.swift */; };
-		23A9611C214B68D000FA0336 /* cCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610C214B68CF00FA0336 /* cCell.swift */; };
-		23A9611D214B68D000FA0336 /* aHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610D214B68CF00FA0336 /* aHoldingCell.swift */; };
-		23A9611E214B68D000FA0336 /* cHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610E214B68CF00FA0336 /* cHoldingCell.swift */; };
+		23A9611B214B68D000FA0336 /* MyWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610B214B68CE00FA0336 /* MyWorkoutCell.swift */; };
+		23A9611C214B68D000FA0336 /* SuggestedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610C214B68CF00FA0336 /* SuggestedCell.swift */; };
+		23A9611D214B68D000FA0336 /* BodyPartHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610D214B68CF00FA0336 /* BodyPartHoldingCell.swift */; };
+		23A9611E214B68D000FA0336 /* SuggestedHoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610E214B68CF00FA0336 /* SuggestedHoldingCell.swift */; };
 		23A9611F214B68D000FA0336 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9610F214B68CF00FA0336 /* FoodCell.swift */; };
 		23A96120214B68D000FA0336 /* GymCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96110214B68CF00FA0336 /* GymCell.swift */; };
 		23A96121214B68D000FA0336 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A96111214B68CF00FA0336 /* ExerciseCell.swift */; };
@@ -97,6 +95,7 @@
 		23B4F9C02163DF40002D8C3D /* login.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9BA2163DF40002D8C3D /* login.gif */; };
 		23B4F9C12163DF40002D8C3D /* workout.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9BB2163DF40002D8C3D /* workout.gif */; };
 		23B4F9C22163DF40002D8C3D /* find.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9BC2163DF40002D8C3D /* find.gif */; };
+		23B4F9C42163F2DB002D8C3D /* USDA_FoodReportV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4F9C32163F2DB002D8C3D /* USDA_FoodReportV2.swift */; };
 		800E46A990C8789D94F0BA43 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0AA389526F60A5F5C5608 /* Pods_myFit.framework */; };
 		8168699320BEF48D00294B42 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8168699220BEF48D00294B42 /* LaunchImages.xcassets */; };
 		8170BC6D20C711CA00FA928E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6C20C711CA00FA928E /* BMI.swift */; };
@@ -105,17 +104,15 @@
 
 /* Begin PBXFileReference section */
 		169FC6C19A54AD2CAE5AB4E0 /* Pods-myFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myFit/Pods-myFit.debug.xcconfig"; sourceTree = "<group>"; };
-		230E791F212C3DFA00C07D25 /* USDA_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_List.swift; sourceTree = "<group>"; };
-		230E7921212C3E1E00C07D25 /* USDA_Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Report.swift; sourceTree = "<group>"; };
-		230E7923212C409500C07D25 /* USDA_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_Search.swift; sourceTree = "<group>"; };
-		2315581420FC331700CDEFB4 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		230E791F212C3DFA00C07D25 /* USDA_FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_FoodList.swift; sourceTree = "<group>"; };
+		230E7921212C3E1E00C07D25 /* USDA_FoodReportV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_FoodReportV1.swift; sourceTree = "<group>"; };
+		230E7923212C409500C07D25 /* USDA_FoodSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_FoodSearch.swift; sourceTree = "<group>"; };
 		234020372125DF8E008BFB27 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		234325B02125BB6500409C23 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewModel.swift; sourceTree = "<group>"; };
 		236B8F3F2124AFE9002612E7 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		2377DDF52152DD5F00D1737E /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
 		2377DDF72152DD9000D1737E /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
-		23A96077214B604C00FA0336 /* MyExercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExercises.swift; sourceTree = "<group>"; };
 		23A96078214B604C00FA0336 /* Routine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		23A96079214B604D00FA0336 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		23A9607A214B604D00FA0336 /* DatabaseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseJSON.swift; sourceTree = "<group>"; };
@@ -124,7 +121,7 @@
 		23A9607D214B604D00FA0336 /* EBEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBEvent.swift; sourceTree = "<group>"; };
 		23A9607E214B604D00FA0336 /* YelpEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpEvent.swift; sourceTree = "<group>"; };
 		23A9607F214B604D00FA0336 /* ExerciseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
-		23A96080214B604E00FA0336 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		23A96080214B604E00FA0336 /* YelpBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpBusiness.swift; sourceTree = "<group>"; };
 		23A96081214B604E00FA0336 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		23A9608D214B60A500FA0336 /* NutritionAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionAPIService.swift; sourceTree = "<group>"; };
 		23A9608E214B60A500FA0336 /* DateFormatterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterService.swift; sourceTree = "<group>"; };
@@ -168,17 +165,17 @@
 		23A960F4214B67D000FA0336 /* ExerciseDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDetailVC.swift; sourceTree = "<group>"; };
 		23A960F5214B67D000FA0336 /* DietVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietVC.swift; sourceTree = "<group>"; };
 		23A960F6214B67D000FA0336 /* RoutinesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinesVC.swift; sourceTree = "<group>"; };
-		23A96104214B68CE00FA0336 /* dHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dHoldingCell.swift; sourceTree = "<group>"; };
+		23A96104214B68CE00FA0336 /* ArticleHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleHoldingCell.swift; sourceTree = "<group>"; };
 		23A96105214B68CE00FA0336 /* BodyPartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyPartCell.swift; sourceTree = "<group>"; };
 		23A96106214B68CE00FA0336 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		23A96107214B68CE00FA0336 /* bHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bHoldingCell.swift; sourceTree = "<group>"; };
+		23A96107214B68CE00FA0336 /* MyWorkoutHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkoutHoldingCell.swift; sourceTree = "<group>"; };
 		23A96108214B68CE00FA0336 /* ParkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkCell.swift; sourceTree = "<group>"; };
 		23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineExerciseCell.swift; sourceTree = "<group>"; };
 		23A9610A214B68CE00FA0336 /* WorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
-		23A9610B214B68CE00FA0336 /* bCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bCell.swift; sourceTree = "<group>"; };
-		23A9610C214B68CF00FA0336 /* cCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cCell.swift; sourceTree = "<group>"; };
-		23A9610D214B68CF00FA0336 /* aHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aHoldingCell.swift; sourceTree = "<group>"; };
-		23A9610E214B68CF00FA0336 /* cHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cHoldingCell.swift; sourceTree = "<group>"; };
+		23A9610B214B68CE00FA0336 /* MyWorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkoutCell.swift; sourceTree = "<group>"; };
+		23A9610C214B68CF00FA0336 /* SuggestedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedCell.swift; sourceTree = "<group>"; };
+		23A9610D214B68CF00FA0336 /* BodyPartHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyPartHoldingCell.swift; sourceTree = "<group>"; };
+		23A9610E214B68CF00FA0336 /* SuggestedHoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedHoldingCell.swift; sourceTree = "<group>"; };
 		23A9610F214B68CF00FA0336 /* FoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		23A96110214B68CF00FA0336 /* GymCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymCell.swift; sourceTree = "<group>"; };
 		23A96111214B68CF00FA0336 /* ExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
@@ -197,6 +194,7 @@
 		23B4F9BA2163DF40002D8C3D /* login.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = login.gif; sourceTree = "<group>"; };
 		23B4F9BB2163DF40002D8C3D /* workout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = workout.gif; sourceTree = "<group>"; };
 		23B4F9BC2163DF40002D8C3D /* find.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = find.gif; sourceTree = "<group>"; };
+		23B4F9C32163F2DB002D8C3D /* USDA_FoodReportV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDA_FoodReportV2.swift; sourceTree = "<group>"; };
 		3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myFit.framework; path = "../Debug-iphonesimulator/Pods_myFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8128C2EE209532CE0088F28D /* myFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8168699220BEF48D00294B42 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
@@ -335,26 +333,26 @@
 		8168699620BEF4C400294B42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				23A9610D214B68CF00FA0336 /* aHoldingCell.swift */,
-				23A96113214B68CF00FA0336 /* ArticleCell.swift */,
-				23A9610B214B68CE00FA0336 /* bCell.swift */,
-				23A96107214B68CE00FA0336 /* bHoldingCell.swift */,
-				23A96105214B68CE00FA0336 /* BodyPartCell.swift */,
-				23A9610C214B68CF00FA0336 /* cCell.swift */,
-				23A9610E214B68CF00FA0336 /* cHoldingCell.swift */,
-				23A96104214B68CE00FA0336 /* dHoldingCell.swift */,
-				23A96111214B68CF00FA0336 /* ExerciseCell.swift */,
-				23A9610F214B68CF00FA0336 /* FoodCell.swift */,
-				23A96110214B68CF00FA0336 /* GymCell.swift */,
-				23A96106214B68CE00FA0336 /* HeaderCell.swift */,
-				23A96108214B68CE00FA0336 /* ParkCell.swift */,
-				23A96112214B68CF00FA0336 /* RecipeCell.swift */,
-				23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */,
-				23A9610A214B68CE00FA0336 /* WorkoutCell.swift */,
 				23A960AA214B60E900FA0336 /* Join.swift */,
 				23A960A9214B60E900FA0336 /* JoinBio.xib */,
 				23A960AB214B60E900FA0336 /* JoinFinal.xib */,
 				23A960AD214B60E900FA0336 /* JoinHabits.xib */,
+				23A9610D214B68CF00FA0336 /* BodyPartHoldingCell.swift */,
+				23A96105214B68CE00FA0336 /* BodyPartCell.swift */,
+				23A96107214B68CE00FA0336 /* MyWorkoutHoldingCell.swift */,
+				23A9610B214B68CE00FA0336 /* MyWorkoutCell.swift */,
+				23A9610E214B68CF00FA0336 /* SuggestedHoldingCell.swift */,
+				23A9610C214B68CF00FA0336 /* SuggestedCell.swift */,
+				23A96104214B68CE00FA0336 /* ArticleHoldingCell.swift */,
+				23A96113214B68CF00FA0336 /* ArticleCell.swift */,
+				23A9610A214B68CE00FA0336 /* WorkoutCell.swift */,
+				23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */,
+				23A96111214B68CF00FA0336 /* ExerciseCell.swift */,
+				23A9610F214B68CF00FA0336 /* FoodCell.swift */,
+				23A96106214B68CE00FA0336 /* HeaderCell.swift */,
+				23A96112214B68CF00FA0336 /* RecipeCell.swift */,
+				23A96108214B68CE00FA0336 /* ParkCell.swift */,
+				23A96110214B68CF00FA0336 /* GymCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,20 +362,20 @@
 			children = (
 				23A9607A214B604D00FA0336 /* DatabaseJSON.swift */,
 				23A96081214B604E00FA0336 /* Article.swift */,
-				23A96080214B604E00FA0336 /* Business.swift */,
-				23A9607D214B604D00FA0336 /* EBEvent.swift */,
-				23A9607F214B604D00FA0336 /* ExerciseList.swift */,
 				23A9607B214B604D00FA0336 /* Food.swift */,
-				23A9607C214B604D00FA0336 /* MapAnnotation.swift */,
-				23A96077214B604C00FA0336 /* MyExercises.swift */,
 				23A96079214B604D00FA0336 /* Recipe.swift */,
-				23A96078214B604C00FA0336 /* Routine.swift */,
+				230E791F212C3DFA00C07D25 /* USDA_FoodList.swift */,
+				230E7921212C3E1E00C07D25 /* USDA_FoodReportV1.swift */,
+				23B4F9C32163F2DB002D8C3D /* USDA_FoodReportV2.swift */,
+				230E7923212C409500C07D25 /* USDA_FoodSearch.swift */,
+				23A9607D214B604D00FA0336 /* EBEvent.swift */,
 				23A9607E214B604D00FA0336 /* YelpEvent.swift */,
+				23A96080214B604E00FA0336 /* YelpBusiness.swift */,
+				23A9607C214B604D00FA0336 /* MapAnnotation.swift */,
+				23A96078214B604C00FA0336 /* Routine.swift */,
 				236B8F3F2124AFE9002612E7 /* Exercise.swift */,
+				23A9607F214B604D00FA0336 /* ExerciseList.swift */,
 				8170BC6C20C711CA00FA928E /* BMI.swift */,
-				230E791F212C3DFA00C07D25 /* USDA_List.swift */,
-				230E7921212C3E1E00C07D25 /* USDA_Report.swift */,
-				230E7923212C409500C07D25 /* USDA_Search.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,20 +397,19 @@
 		81A8F51520BF704100F62A37 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				23A96096214B60A600FA0336 /* ArticlesAPIService.swift */,
-				23A96092214B60A500FA0336 /* BusinessAPIService.swift */,
-				23A9608E214B60A500FA0336 /* DateFormatterService.swift */,
-				23A96090214B60A500FA0336 /* EBEventAPIService.swift */,
-				23A96094214B60A500FA0336 /* FileManagerService.swift */,
 				23A96095214B60A500FA0336 /* FoodAPIService.swift */,
-				23A96093214B60A500FA0336 /* ImageService.swift */,
-				23A96091214B60A500FA0336 /* LocationService.swift */,
-				23A9608D214B60A500FA0336 /* NutritionAPIService.swift */,
-				23A96098214B60A600FA0336 /* RecipeAPIService.swift */,
 				23A96097214B60A600FA0336 /* USDAFoodAPIService.swift */,
-				23A9608F214B60A500FA0336 /* UserPreferenceService.swift */,
+				23A96098214B60A600FA0336 /* RecipeAPIService.swift */,
+				23A9608D214B60A500FA0336 /* NutritionAPIService.swift */,
+				23A96090214B60A500FA0336 /* EBEventAPIService.swift */,
 				23A96099214B60A600FA0336 /* YelpEventAPIService.swift */,
-				2315581420FC331700CDEFB4 /* RealmService.swift */,
+				23A96092214B60A500FA0336 /* BusinessAPIService.swift */,
+				23A96096214B60A600FA0336 /* ArticlesAPIService.swift */,
+				23A9608E214B60A500FA0336 /* DateFormatterService.swift */,
+				23A96091214B60A500FA0336 /* LocationService.swift */,
+				23A9608F214B60A500FA0336 /* UserPreferenceService.swift */,
+				23A96094214B60A500FA0336 /* FileManagerService.swift */,
+				23A96093214B60A500FA0336 /* ImageService.swift */,
 				23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */,
 			);
 			path = Services;
@@ -521,10 +518,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-myFit/Pods-myFit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -558,14 +563,15 @@
 			files = (
 				23A960A6214B60A600FA0336 /* YelpEventAPIService.swift in Sources */,
 				23A9609A214B60A600FA0336 /* NutritionAPIService.swift in Sources */,
-				230E7920212C3DFA00C07D25 /* USDA_List.swift in Sources */,
+				230E7920212C3DFA00C07D25 /* USDA_FoodList.swift in Sources */,
 				23A960A3214B60A600FA0336 /* ArticlesAPIService.swift in Sources */,
 				23A9609F214B60A600FA0336 /* BusinessAPIService.swift in Sources */,
 				23A96085214B604E00FA0336 /* DatabaseJSON.swift in Sources */,
 				23A960DA214B628700FA0336 /* CustomView.swift in Sources */,
 				8170BC6D20C711CA00FA928E /* BMI.swift in Sources */,
-				230E7922212C3E1E00C07D25 /* USDA_Report.swift in Sources */,
-				23A9611C214B68D000FA0336 /* cCell.swift in Sources */,
+				230E7922212C3E1E00C07D25 /* USDA_FoodReportV1.swift in Sources */,
+				23A9611C214B68D000FA0336 /* SuggestedCell.swift in Sources */,
+				23B4F9C42163F2DB002D8C3D /* USDA_FoodReportV2.swift in Sources */,
 				23A960DB214B628700FA0336 /* CustomImageView.swift in Sources */,
 				234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */,
 				23A960FB214B67D000FA0336 /* ChatVC.swift in Sources */,
@@ -579,11 +585,11 @@
 				23A960B2214B60EA00FA0336 /* Join.swift in Sources */,
 				23A960A5214B60A600FA0336 /* RecipeAPIService.swift in Sources */,
 				23A960D8214B628700FA0336 /* Extensions.swift in Sources */,
-				23A9611E214B68D000FA0336 /* cHoldingCell.swift in Sources */,
+				23A9611E214B68D000FA0336 /* SuggestedHoldingCell.swift in Sources */,
 				23A96089214B604E00FA0336 /* YelpEvent.swift in Sources */,
 				23A96115214B68D000FA0336 /* BodyPartCell.swift in Sources */,
 				23A96121214B68D000FA0336 /* ExerciseCell.swift in Sources */,
-				23A9608B214B604E00FA0336 /* Business.swift in Sources */,
+				23A9608B214B604E00FA0336 /* YelpBusiness.swift in Sources */,
 				23A96087214B604E00FA0336 /* MapAnnotation.swift in Sources */,
 				23A960A1214B60A600FA0336 /* FileManagerService.swift in Sources */,
 				23A9611A214B68D000FA0336 /* WorkoutCell.swift in Sources */,
@@ -591,10 +597,9 @@
 				23A96101214B67D000FA0336 /* ExerciseDetailVC.swift in Sources */,
 				23A960F8214B67D000FA0336 /* LoginVC.swift in Sources */,
 				23A960A0214B60A600FA0336 /* ImageService.swift in Sources */,
-				23A96082214B604E00FA0336 /* MyExercises.swift in Sources */,
 				23A96086214B604E00FA0336 /* Food.swift in Sources */,
 				23A960FA214B67D000FA0336 /* CreateWorkoutVC.swift in Sources */,
-				23A9611B214B68D000FA0336 /* bCell.swift in Sources */,
+				23A9611B214B68D000FA0336 /* MyWorkoutCell.swift in Sources */,
 				23A960F9214B67D000FA0336 /* FindVC.swift in Sources */,
 				23A96083214B604E00FA0336 /* Routine.swift in Sources */,
 				23A960FF214B67D000FA0336 /* OnboardingSlide.swift in Sources */,
@@ -610,22 +615,21 @@
 				23A9609B214B60A600FA0336 /* DateFormatterService.swift in Sources */,
 				23A9608C214B604E00FA0336 /* Article.swift in Sources */,
 				23A960FE214B67D000FA0336 /* BodyPartVC.swift in Sources */,
-				230E7924212C409500C07D25 /* USDA_Search.swift in Sources */,
-				23A9611D214B68D000FA0336 /* aHoldingCell.swift in Sources */,
+				230E7924212C409500C07D25 /* USDA_FoodSearch.swift in Sources */,
+				23A9611D214B68D000FA0336 /* BodyPartHoldingCell.swift in Sources */,
 				23A96102214B67D000FA0336 /* DietVC.swift in Sources */,
 				23A96118214B68D000FA0336 /* ParkCell.swift in Sources */,
 				23A9609D214B60A600FA0336 /* EBEventAPIService.swift in Sources */,
-				23A96114214B68D000FA0336 /* dHoldingCell.swift in Sources */,
+				23A96114214B68D000FA0336 /* ArticleHoldingCell.swift in Sources */,
 				23A9611F214B68D000FA0336 /* FoodCell.swift in Sources */,
 				2377DDF82152DD9000D1737E /* Date+.swift in Sources */,
 				23A96120214B68D000FA0336 /* GymCell.swift in Sources */,
 				23A960A4214B60A600FA0336 /* USDAFoodAPIService.swift in Sources */,
 				23A960A2214B60A600FA0336 /* FoodAPIService.swift in Sources */,
 				23A96103214B67D000FA0336 /* RoutinesVC.swift in Sources */,
-				23A96117214B68D000FA0336 /* bHoldingCell.swift in Sources */,
+				23A96117214B68D000FA0336 /* MyWorkoutHoldingCell.swift in Sources */,
 				23A960D6214B628700FA0336 /* CustomLabel.swift in Sources */,
 				23A96088214B604E00FA0336 /* EBEvent.swift in Sources */,
-				2315581520FC331700CDEFB4 /* RealmService.swift in Sources */,
 				23A960D7214B628700FA0336 /* Enums.swift in Sources */,
 				23A9609C214B60A600FA0336 /* UserPreferenceService.swift in Sources */,
 				23A960DD214B628700FA0336 /* CustomButtom.swift in Sources */,

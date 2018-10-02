@@ -10,8 +10,8 @@ import Foundation
 
 
 struct FoodSearchJSON: Codable {
-    var text: String // "red apple",
-    var parsed: [FoodResult]  //  [],
+    var text: String
+    var parsed: [FoodResult]
 }
 
 struct FoodResult: Codable {
@@ -19,18 +19,25 @@ struct FoodResult: Codable {
 }
 
 struct Food: Codable {
-    var id: String // "food_bnbh4ycaqj9as0a9z7h9xb2wmgat",
-    var uri: String // "http://www.edamam.com/ontologies/edamam.owl#Food_09003",
-    var label: String // "Apples, raw, with skin",
+    var id: String
+    var uri: String
+    var label: String
     var nutrients: EdamamNutrient
-    var source: String // "Generic"
+    var source: String
 }
 
 struct EdamamNutrient: Codable {
-    var ENERC_KCAL: Double? // 52,
-    var PROCNT: Double? // 0.26,
-    var FAT: Double? // 0.17,
-    var CHOCDF: Double? // 13.81
+    var calories: Double?
+    var protein: Double?
+    var fat: Double?
+    var carbohydrates: Double?
+    
+    private enum CodingKeys: String, CodingKey {
+        case calories = "ENERC_KCAL"
+        case protein = "PROCNT"
+        case fat = "FAT"
+        case carbohydrates = "CHOCDF"
+    }
 }
 
 
@@ -67,9 +74,8 @@ enum NutritionalCodes: String {
 
 
 enum CalorieCriteria: String {
+    case lowCalorieCount = "001-300"
+    case midCalorieCount = "301-600"
+    case highCalorieCount = "601-1200"
     //The format is calories=RANGE where RANGE is replaced by the value in kcal. RANGE is in one of MIN+, MIN-MAX or MAX, where MIN and MAX are non-negative integer numbers. The + symbol needs to be properly encoded. Examples: “calories=100-300” will return all foods with which have between 100 and 300 kcal per serving.
-    case lowCalorieCount = "001-300" //range
-    case midCalorieCount = "301-600" //range
-    case highCalorieCount = "601-1200" //range
-
 }

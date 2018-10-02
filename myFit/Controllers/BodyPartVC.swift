@@ -14,6 +14,10 @@ class BodyPartVC: UIViewController {
     @IBOutlet weak var bodyPartCollectionView: UICollectionView!
     @IBOutlet weak var bodyPartTableView: UITableView!
     
+    deinit {
+        
+    }
+    
     private var exercises = [Exercise]() {
         didSet {
             animateTable()
@@ -29,10 +33,6 @@ class BodyPartVC: UIViewController {
         setupCollectionView()
         setupTableView()
         loadExercises()
-    }
-    
-    deinit {
-        print("de-init: BodyPartVC - memory cleared")
     }
     
     private func setupTableView() {

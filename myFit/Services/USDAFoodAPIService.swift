@@ -69,8 +69,8 @@ class USDAFoodAPIService {
     
     //  MARK: Search
     
-    static func fetchFoodSearch(with searchTerm: String, completion: @escaping ([SearchItem]) -> Void) {
-        let urlString = "https://api.nal.usda.gov/ndb/search/?api_key=\(APIKeys.USDA_APIKey)&format=json&offset=0&max=50&sort=\(SearchSort.byFoodName.rawValue)&q=\(searchTerm)"
+    static func fetchFoodSearch(with searchTerm: String, completion: @escaping ([FoodSearchItem]) -> Void) {
+        let urlString = "https://api.nal.usda.gov/ndb/search/?api_key=\(APIKeys.USDA_APIKey)&format=json&offset=0&max=50&sort=\(SortType.byFoodName.rawValue)&q=\(searchTerm)"
         guard let url = URL(string: urlString) else {return}
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let task = session.dataTask(with: url) { (data, httpResponse, err) in

@@ -1,9 +1,3 @@
-/*
- 
- This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike
- 4.0 International License, by Winston Maragh.
- 
- */
 //
 //  Exercise.swift
 //  Fit
@@ -13,7 +7,6 @@
 //
 
 import UIKit
-//import RealmSwift
 
 
 class Exercise: Codable {
@@ -24,7 +17,6 @@ class Exercise: Codable {
     var imageStr: String? = ""
     var videoStr: String? = ""
     var group: String? = "Arms"
-
 //    var group: ExerciseList.Group = ExerciseList.Group.Arms
     
     init(name: String, desc: String, instructions: String, imageStr: String?, videoStr: String?, group: String?) {
@@ -45,7 +37,7 @@ class Exercise: Codable {
 //        self.group = group
 //    }
 
-//    static func fetchExercise(exerciseID: String, completion: @escaping (Exercise) -> Void) {
+//    class func fetchExercise(exerciseID: String, completion: @escaping (Exercise) -> Void) {
 //        let urlString = "https://\(exerciseID)" //TODO - create endpoint
 //        guard let url = URL(string: urlString) else {return}
 //        let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -62,7 +54,7 @@ class Exercise: Codable {
 //        task.resume()
 //    }
     
-//    static func fetchWorkoutExercises(workoutID: String, completion: @escaping ([Exercise]) -> Void) {
+//    class func fetchWorkoutExercises(workoutID: String, completion: @escaping ([Exercise]) -> Void) {
 //        let urlString = "https://\(workoutID)" //TODO - create endpoint
 //        guard let url = URL(string: urlString) else {return}
 //        let session = URLSession(configuration: URLSessionConfiguration.default)

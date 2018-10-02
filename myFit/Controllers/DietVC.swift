@@ -14,6 +14,10 @@ class DietVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
 
+    deinit {
+        
+    }
+    
 	let sectionTitles: [String] = ["Breakfast", "Lunch", "Dinner", "Snacks", "Liquids"]
     
     var recipes = [Recipe]() {

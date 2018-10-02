@@ -31,7 +31,7 @@ class ExerciseDetailVC: UIViewController {
     }
     
     deinit {
-        print("de-init: DetailExerciseVC - memory cleared")
+
     }
     
     func setupVideoView(){
@@ -41,16 +41,15 @@ class ExerciseDetailVC: UIViewController {
     }
     
     func addVideoToViewView(){
+        #warning ("Remove - just for testing. Use the one below for dynamic")
         guard let videoURL = Bundle.main.url(forResource: "abs", withExtension: "mp4") else {
             print("Error with video");
             return
         }
-        
 //        guard let videoURL = Bundle.main.url(forResource: exercise.videoStr, withExtension: "mp4") else {
 //            print("Error with video");
 //            return
 //        }
-        
         
         self.player = AVPlayer(url: videoURL)
         player?.volume = 0.001

@@ -12,16 +12,16 @@ class WorkoutVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    deinit {
+        
+    }
+    
     var sections: [String] = ["Exercises By Muscle: ", "My Workouts: ", "Suggested Workouts: ", "Fitness News: "]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         testData()
-    }
-    
-    deinit {
-        print("de-init: WorkoutVC - memory cleared")
     }
     
     func setupTableView() {
@@ -34,7 +34,6 @@ class WorkoutVC: UIViewController {
     }
     
 }
-
 
 
 // MARK: TableView Holding Cells for CollectionViews
@@ -51,22 +50,22 @@ extension WorkoutVC: UITableViewDataSource, UITableViewDelegate {
         
         switch indexPath.section {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: aHoldingCell.id, for: indexPath) as! aHoldingCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: BodyPartHoldingCell.id, for: indexPath) as! BodyPartHoldingCell
             cell.viewController = self
             cell.configureCell(forCell: cell)
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: bHoldingCell.id, for: indexPath) as! bHoldingCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: MyWorkoutHoldingCell.id, for: indexPath) as! MyWorkoutHoldingCell
             cell.viewController = self
             cell.configureCell(forCell: cell)
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: cHoldingCell.id, for: indexPath) as! cHoldingCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: SuggestedHoldingCell.id, for: indexPath) as! SuggestedHoldingCell
             cell.viewController = self
             cell.configureCell(forCell: cell)
             return cell
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: dHoldingCell.id, for: indexPath) as! dHoldingCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: ArticleHoldingCell.id, for: indexPath) as! ArticleHoldingCell
             cell.viewController = self
             cell.configureCell(forCell: cell)
             return cell

@@ -15,7 +15,8 @@
 import Foundation
 
 
-class BMI {
+class BMI: NSObject {
+    
     var weight: Double
     var height: Double
     var age: Int
@@ -37,7 +38,6 @@ class BMI {
         
         var result: (Double, String) = (0.0, "")
         
-        //TODO: calculate BMI
         let bmi: Double = ((weight) / (height * height)) * 703
         var descr: String = "normal"
         
@@ -51,14 +51,14 @@ class BMI {
         }
         
         result = (bmi, descr)
-        
+
         return result
     }
     
     
     // 1 pound = 0.45359237 kilograms
 
-    /*****************************
+    /***************************** LEGEND
      
      GENDER       AGE      LOW          NORMAL       OVERWEIGHT   OBESE
      Female      20-39    <21.0        21.0-32.9     33.0-38.9    >= 39.0

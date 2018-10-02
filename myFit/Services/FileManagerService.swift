@@ -22,7 +22,7 @@ class FileManagerService {
 
     }
     
-    private var venues = [Business]() {
+    private var venues = [YelpBusiness]() {
         didSet {
             saveData(fileName: .venuesFilePath)
         }
@@ -51,7 +51,7 @@ class FileManagerService {
         events.insert(event, at: 0)
     }
     
-    func add(venue: Business) {
+    func add(venue: YelpBusiness) {
         venues.insert(venue, at: 0)
     }
     
@@ -65,7 +65,7 @@ class FileManagerService {
     
     
     // Retrieve
-    func getVenues() -> [Business] {
+    func getVenues() -> [YelpBusiness] {
         loadData(fileName: .venuesFilePath)
         return venues
     }
@@ -160,7 +160,7 @@ class FileManagerService {
                 let savedEvents = try PropertyListDecoder().decode([EBEvent].self, from: encodedData)
                 events = savedEvents
             case .venuesFilePath:
-                let savedVenues = try PropertyListDecoder().decode([Business].self, from: encodedData)
+                let savedVenues = try PropertyListDecoder().decode([YelpBusiness].self, from: encodedData)
                 venues = savedVenues
             case .articlesFilePath:
                 let savedEvents = try PropertyListDecoder().decode([Article].self, from: encodedData)

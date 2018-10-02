@@ -6,5 +6,7 @@ target 'myFit' do
 
   # Pods for myFit
     pod 'Alamofire'
+    pod 'FBSDKLoginKit'
+    pod 'SwiftyJSON'
     
 end
