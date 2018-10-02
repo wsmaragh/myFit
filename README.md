@@ -6,6 +6,9 @@
 
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
 
+![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/diet.gif)
+
+
 <img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/appFlow1.imageset/appFlow1.png"
 width="960" style="max-width:100%;">
 <img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/appFlow2.imageset/appFlow2.png" width="960" style="max-width:100%;">
