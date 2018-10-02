@@ -541,10 +541,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfS-X9-AsG">
-                                <rect key="frame" x="0.0" y="88" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="150"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgWeights" translatesAutoresizingMaskIntoConstraints="NO" id="8tw-Tu-7xf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="workout2" translatesAutoresizingMaskIntoConstraints="NO" id="8tw-Tu-7xf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercises" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWN-dZ-Ujj">
                                         <rect key="frame" x="76" y="9" width="79" height="21"/>
@@ -583,7 +583,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAh-X1-RRA">
-                                        <rect key="frame" x="293" y="15" width="70" height="70"/>
+                                        <rect key="frame" x="293" y="40" width="70" height="70"/>
                                         <color key="backgroundColor" name="appOrange"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="WYW-q3-35T"/>
@@ -597,7 +597,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="8tw-Tu-7xf" firstAttribute="top" secondItem="jfS-X9-AsG" secondAttribute="top" id="2dV-Lo-BGL"/>
-                                    <constraint firstAttribute="height" constant="100" id="2da-ks-Jn8"/>
+                                    <constraint firstAttribute="height" constant="150" id="2da-ks-Jn8"/>
                                     <constraint firstItem="8tw-Tu-7xf" firstAttribute="leading" secondItem="jfS-X9-AsG" secondAttribute="leading" id="EVW-Yd-mvL"/>
                                     <constraint firstAttribute="bottom" secondItem="8tw-Tu-7xf" secondAttribute="bottom" id="IOX-E5-kOt"/>
                                     <constraint firstAttribute="trailing" secondItem="8tw-Tu-7xf" secondAttribute="trailing" id="LeT-LJ-ric"/>
@@ -606,7 +606,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1VJ-S2-qcV">
-                                <rect key="frame" x="0.0" y="198" width="375" height="531"/>
+                                <rect key="frame" x="0.0" y="248" width="375" height="481"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RoutineExerciseCell" rowHeight="81" id="hSM-h8-4eg" customClass="RoutineExerciseCell" customModule="myFit" customModuleProvider="target">
@@ -1460,7 +1460,6 @@
         <image name="bgGym" width="620" height="400"/>
         <image name="bgOnBars" width="640" height="426"/>
         <image name="bgPark" width="640" height="397"/>
-        <image name="bgWeights" width="1280" height="847"/>
         <image name="body" width="964" height="864"/>
         <image name="food_breakfast" width="640" height="426"/>
         <image name="food_dinner" width="640" height="426"/>
@@ -1477,6 +1476,7 @@
         <image name="tabbar_events_filled" width="25" height="25"/>
         <image name="tabbar_workout_empty" width="25" height="25"/>
         <image name="tabbar_workout_filled" width="25" height="25"/>
+        <image name="workout2" width="640" height="426"/>
         <namedColor name="appOrange">
             <color red="1" green="0.57599997520446777" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

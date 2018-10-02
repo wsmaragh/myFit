@@ -89,6 +89,8 @@
 		23A9612D214B6E1600FA0336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9612B214B6E1600FA0336 /* Main.storyboard */; };
 		23A9612F214B70C700FA0336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9612E214B70C700FA0336 /* AppDelegate.swift */; };
 		23ADE1CC2151B39000D6609C /* FacebookLoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */; };
+		23B4F9B32163CC15002D8C3D /* abs.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B22163CC15002D8C3D /* abs.mp4 */; };
+		23B4F9B52163CCA9002D8C3D /* absCrunchesWithLegUp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B42163CCA8002D8C3D /* absCrunchesWithLegUp.mp4 */; };
 		800E46A990C8789D94F0BA43 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0AA389526F60A5F5C5608 /* Pods_myFit.framework */; };
 		8168699320BEF48D00294B42 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8168699220BEF48D00294B42 /* LaunchImages.xcassets */; };
 		8170BC6D20C711CA00FA928E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6C20C711CA00FA928E /* BMI.swift */; };
@@ -181,6 +183,8 @@
 		23A9612B214B6E1600FA0336 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		23A9612E214B70C700FA0336 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginServices.swift; sourceTree = "<group>"; };
+		23B4F9B22163CC15002D8C3D /* abs.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abs.mp4; sourceTree = "<group>"; };
+		23B4F9B42163CCA8002D8C3D /* absCrunchesWithLegUp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = absCrunchesWithLegUp.mp4; sourceTree = "<group>"; };
 		3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myFit.framework; path = "../Debug-iphonesimulator/Pods_myFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8128C2EE209532CE0088F28D /* myFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8168699220BEF48D00294B42 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
@@ -234,6 +238,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		23B4F9B62163D1D9002D8C3D /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
 		23B544BD2151F21300FF921F /* Customs */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +262,8 @@
 		8128C2E5209532CE0088F28D = {
 			isa = PBXGroup;
 			children = (
+				23B4F9B42163CCA8002D8C3D /* absCrunchesWithLegUp.mp4 */,
+				23B4F9B22163CC15002D8C3D /* abs.mp4 */,
 				8128C2F0209532CE0088F28D /* myFit */,
 				8128C2EF209532CE0088F28D /* Products */,
 				856A46B0B414359B83EA3991 /* Pods */,
@@ -353,6 +366,7 @@
 		8168699820BEF4E300294B42 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				23B4F9B62163D1D9002D8C3D /* Gifs */,
 				23A96124214B6A2400FA0336 /* Info.plist */,
 				23A9612E214B70C700FA0336 /* AppDelegate.swift */,
 				23A9612A214B6E1600FA0336 /* LaunchScreen.storyboard */,
@@ -456,6 +470,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B4F9B52163CCA9002D8C3D /* absCrunchesWithLegUp.mp4 in Resources */,
+				23B4F9B32163CC15002D8C3D /* abs.mp4 in Resources */,
 				23A960CB214B623C00FA0336 /* Videos in Resources */,
 				23A960B1214B60EA00FA0336 /* JoinBio.xib in Resources */,
 				23A960C9214B623C00FA0336 /* Colors.xcassets in Resources */,

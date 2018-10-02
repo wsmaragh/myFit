@@ -41,13 +41,17 @@ class ExerciseDetailVC: UIViewController {
     }
     
     func addVideoToViewView(){
-        print("EXERCISE videoStr", exercise.videoStr)
-
         guard let videoURL = Bundle.main.url(forResource: "abs", withExtension: "mp4") else {
             print("Error with video");
             return
         }
-//        guard let videoURL = Bundle.main.url(forResource: exercise.videoStr, withExtension: "mp4") else {print("Error with video"); return}
+        
+//        guard let videoURL = Bundle.main.url(forResource: exercise.videoStr, withExtension: "mp4") else {
+//            print("Error with video");
+//            return
+//        }
+        
+        
         self.player = AVPlayer(url: videoURL)
         player?.volume = 0.001
         let layer: AVPlayerLayer = AVPlayerLayer(player: player)
@@ -56,6 +60,7 @@ class ExerciseDetailVC: UIViewController {
         layer.videoGravity = AVLayerVideoGravity.resize
         videoView.layer.addSublayer(layer)
     }
+    
     
     func addPlayButtonToVideoView(){
         let size: CGFloat = 100.0

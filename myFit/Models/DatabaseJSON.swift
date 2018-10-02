@@ -72,8 +72,8 @@ struct SampleFood {
 
 struct DummyData {
     static let sampleMyWorkout: [Routine] = [
-        Routine(name: "Core Madness", exercises: [], duration: 30, imageStr: "workout1"),
-        Routine(name: "Chest Expander", exercises: [], duration: 45, imageStr: "workout2"),
+        Routine(name: "Core Madness", exercises: [], duration: 30, imageStr: "workout2"),
+        Routine(name: "Chest Expander", exercises: [], duration: 45, imageStr: "workout1"),
         Routine(name: "Shoulder Boulder", exercises: [], duration: 75,  imageStr: "workout3"),
         Routine(name: "Massive Legs", exercises: [], duration: 20,  imageStr: "workout4"),
         Routine(name: "Insanity Cardio", exercises: [], duration: 90,  imageStr: "workout5"),
