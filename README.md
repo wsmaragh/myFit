@@ -6,18 +6,7 @@
 
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
 
-<a>
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/login.gif" width="150" />
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/workout.gif" width="150" />
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/routine.gif" width="150" />
-</a>
-
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/exercises.gif" width="150" />
-
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/diet.gif" width="150" />
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/find.gif" width="150" />
-
-
+## App Flow:
 ![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/login.gif)
 ![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/workout.gif)
 ![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/diet.gif)
@@ -25,21 +14,10 @@
 ![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/routine.gif)
 ![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/exercises.gif)
 
-
-
-
-
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/appFlow1.imageset/appFlow1.png"
-width="960" style="max-width:100%;">
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/appFlow2.imageset/appFlow2.png" width="960" style="max-width:100%;">
-<img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/appFlow3.imageset/appFlow3.png" width="960" style="max-width:100%;">
-
 ## Designing & Planning
 <p align="center">
   <img src="https://i.imgur.com/dCnKByw.jpg" width="600">
 </p>
-
-
 
 
 ## Features:
@@ -50,6 +28,11 @@ width="960" style="max-width:100%;">
 * Chat with Partners
 * More...
 
+## Built with:
+* Swift 4.2
+* Data APIs: Edamam, USDA, NewsAPI, Yelp, EventBrite, Facebook GraphQL
+* Storage: UserDefaults, Filemanager (migrating to CoreData)
+* Pods: Alamofire, SwiftyJSON, FBSDKLoginKit
 
 ## Developed by:
 <img src = "https://i.imgur.com/N3G0BEJ.gif" width=150>
