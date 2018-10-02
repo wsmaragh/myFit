@@ -18,7 +18,7 @@ class DietVC: UIViewController {
         
     }
     
-	let sectionTitles: [String] = ["Breakfast", "Lunch", "Dinner", "Snacks", "Liquids"]
+	let sectionTitles: [SectionsForFood] = ["Breakfast", "Lunch", "Dinner", "Snacks", "Liquids"]
 //    let sections :
     
     var recipes = [Recipe]() {
@@ -105,9 +105,10 @@ extension DietVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: CollapsibleHeader.id) as? CollapsibleHeader ?? CollapsibleHeader(reuseIdentifier: CollapsibleHeader.id)
-        let section = sectionTitles[section]
-        header.configureCell(section: section)
-        header.setCollapsed(sections[section].collapsed)
+        let sectionTitle = sectionTitles[section]
+        header.configureCell(section: sectionTitle)
+        header.setCollapsed(false)
+//        header.setCollapsed(sections[section].collapsed)
         header.section = section
         header.delegate = self
         return header
@@ -150,3 +151,16 @@ extension DietVC: UITableViewDataSource, UITableViewDelegate {
 
 }
 
+
+
+// MARK: - Section Header Delegate
+extension DietVC: CollapsibleHeaderDelegate {
+    
+    func toggleSection(_ header: CollapsibleHeader, section: Int) {
+        let collapsed = !sections[section].collapsed
+        sections[section].collapsed = collapsed
+        header.setCollapsed(collapsed)
+        customView.tableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
+    }
+    
+}
