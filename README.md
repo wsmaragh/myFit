@@ -1,4 +1,6 @@
 # myFit
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/logo.imageset/logo.png" width="300">
+
 <a>
     <p align="center">  A simple way to get and stay fit! Keep yourself accountable, browse suggested Workouts, create custom workouts, get meal suggestions, track your daily calories, and chat with trainers. 
     </p> 
@@ -7,12 +9,16 @@
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
 
 ## App Flow:
-![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/login.gif)
-![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/workout.gif)
-![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/diet.gif)
-![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/find.gif)
-![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/routine.gif)
-![](https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/exercises.gif)
+<p align="center">
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/login.gif" width="300">
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/workout.gif" width="300">
+    
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/diet.gif" width="300">
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/find.gif" width="300">
+  
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/routine.gif" width="300">
+  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Gifs/exercises.gif" width="300">
+</p>
 
 ## Designing & Planning
 <p align="center">
