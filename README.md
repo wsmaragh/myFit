@@ -1,12 +1,20 @@
-# myFit
-  <img src= "https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/logo.imageset/logo.png" width="300">
+<p align="center">
+    <img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/logo.imageset/logo.png" width="300" style="max-width:100%;">
+</p>
+
 
 <a>
     <p align="center">  A simple way to get and stay fit! Keep yourself accountable, browse suggested Workouts, create custom workouts, get meal suggestions, track your daily calories, and chat with trainers. 
     </p> 
 </a>
 
-[![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
+
+<a>
+    <p align="center">  **Note: Work in Progress *** - I will start updating again next week
+    </p> 
+</a>
+
+
 
 ## App Flow:
 <p align="center">
