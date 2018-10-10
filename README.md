@@ -1,3 +1,9 @@
+<a>
+    <p align="center">  ** Note: Work in Progress *** - I will start updating again next week **
+    </p> 
+</a>
+
+
 <p align="center">
     <img src="https://github.com/wsmaragh/myFit/blob/master/myFit/Resources/Pictures.xcassets/logo.imageset/logo.png" width="300" style="max-width:100%;">
 </p>
@@ -8,11 +14,6 @@
     </p> 
 </a>
 
-
-<a>
-    <p align="center">  **Note: Work in Progress *** - I will start updating again next week
-    </p> 
-</a>
 
 
 
