@@ -9,7 +9,6 @@
 import UIKit
 import MapKit
 
-
 class MapAnnotation: NSObject, MKAnnotation {
     
     var coordinate: CLLocationCoordinate2D
@@ -22,7 +21,6 @@ class MapAnnotation: NSObject, MKAnnotation {
         self.subtitle = subtitle
     }
 }
-
 
 class MapAnnotationView: MKAnnotationView {
     required init?(coder aDecoder: NSCoder) { super.init(coder: aDecoder) }

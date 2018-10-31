@@ -8,13 +8,7 @@
 
 import UIKit
 
-
-//class WorkoutViewModel: NSObject {
-//    
-//    weak var workoutVC: WorkoutVC?
-//    
-//    init(controller: WorkoutVC) {
-//        self.workoutVC = controller
-//    }
+//class WorkoutViewModel {
+//
 //    
 //}

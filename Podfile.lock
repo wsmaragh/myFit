@@ -1,37 +1,42 @@
 PODS:
   - Alamofire (4.7.3)
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
-  - FBSDKCoreKit (4.36.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.36.0):
-    - FBSDKCoreKit
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - Kingfisher (4.10.0)
+  - ReachabilitySwift (4.3.0)
+  - SkeletonView (1.4.1)
   - SwiftyJSON (4.2.0)
+  - Toucan (1.0.0)
 
 DEPENDENCIES:
   - Alamofire
-  - FBSDKLoginKit
+  - Charts
+  - Kingfisher
+  - ReachabilitySwift
+  - SkeletonView
   - SwiftyJSON
+  - Toucan
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - Bolts
-    - FBSDKCoreKit
-    - FBSDKLoginKit
+    - Charts
+    - Kingfisher
+    - ReachabilitySwift
+    - SkeletonView
     - SwiftyJSON
+    - Toucan
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  FBSDKCoreKit: 3b8e6570eedb443f9fc4af196a7bf39f18e3a3d8
-  FBSDKLoginKit: 8bccb6064708ab2f4251a7fc4e3b6d8d00ad91ba
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Toucan: 61867fb10948c02e9804280a95eb183e98eac97a
 
-PODFILE CHECKSUM: 1b7041bc315392b083668c1171a7dce23f9049ee
+PODFILE CHECKSUM: a604484d5598a7dd8f4193ff3cd8e91faf401421
 
 COCOAPODS: 1.5.3

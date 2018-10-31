@@ -7,7 +7,6 @@
 //
 import Foundation
 
-
 struct BusinessJSON: Codable {
     var businesses: [YelpBusiness]
     var total: Int

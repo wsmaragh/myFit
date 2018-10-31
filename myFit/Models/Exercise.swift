@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class Exercise: Codable {
     
     var name: String = "Exercise"
@@ -70,6 +69,5 @@ class Exercise: Codable {
 //        }
 //        task.resume()
 //    }
-    
 }
 

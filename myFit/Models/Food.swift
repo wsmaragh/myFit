@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct FoodSearchJSON: Codable {
     var text: String
     var parsed: [FoodResult]
@@ -40,7 +39,6 @@ struct EdamamNutrient: Codable {
     }
 }
 
-
 enum NutritionalCodes: String {
     case ENERC_KCAL = "Calories" //kcal
     case FAT = "Fat" // g
@@ -71,7 +69,6 @@ enum NutritionalCodes: String {
     case P = "Phosphorus" // mg
     case FE = "Iron" // mg
 }
-
 
 enum CalorieCriteria: String {
     case lowCalorieCount = "001-300"

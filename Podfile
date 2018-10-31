@@ -5,8 +5,15 @@ target 'myFit' do
   use_frameworks!
 
   # Pods for myFit
+  
+    pod 'ReachabilitySwift'
     pod 'Alamofire'
-    pod 'FBSDKLoginKit'
     pod 'SwiftyJSON'
     
+    pod 'Charts'
+    pod 'SkeletonView'
+   
+    pod 'Kingfisher'
+    pod 'Toucan'
+        
 end

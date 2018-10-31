@@ -14,7 +14,6 @@
 
 import Foundation
 
-
 class BMI: NSObject {
     
     var weight: Double
@@ -22,7 +21,6 @@ class BMI: NSObject {
     var age: Int
     var gender: Gender
 
-    
     init(weight: Double, height: Double, age: Int, gender: Gender){
         self.weight = weight
         self.height = height
@@ -55,7 +53,6 @@ class BMI: NSObject {
         return result
     }
     
-    
     // 1 pound = 0.45359237 kilograms
 
     /***************************** LEGEND
@@ -77,4 +74,3 @@ class BMI: NSObject {
     //BMI Adjustment: Those with a higher muscle mass, such as athletes, may have a high BMI but not be at greater health risk. Those with a lower muscle mass, such as children who have not completed their growth or the elderly who may be losing some muscle mass may have a lower BMI.
     
 }
-

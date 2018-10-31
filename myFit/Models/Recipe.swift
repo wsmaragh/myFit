@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct RecipeJSON: Codable {
     var hits: [Hit]
     var count: Int

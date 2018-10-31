@@ -13,6 +13,22 @@
 		234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234020372125DF8E008BFB27 /* WorkoutViewModel.swift */; };
 		234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B02125BB6500409C23 /* ExerciseViewModel.swift */; };
 		234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */; };
+		235779C1218A059400DD57F7 /* video.m3u8 in Resources */ = {isa = PBXBuildFile; fileRef = 235779C0218A059400DD57F7 /* video.m3u8 */; };
+		235779CA218A13FD00DD57F7 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779C9218A13FD00DD57F7 /* String+.swift */; };
+		235779CC218A144000DD57F7 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779CB218A144000DD57F7 /* Dictionary+.swift */; };
+		235779CE218A145800DD57F7 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779CD218A145800DD57F7 /* UIColor+.swift */; };
+		235779D0218A147B00DD57F7 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779CF218A147B00DD57F7 /* UIView+.swift */; };
+		235779D2218A149B00DD57F7 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779D1218A149B00DD57F7 /* UIImage+Gif.swift */; };
+		235779D4218A15B800DD57F7 /* UItextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779D3218A15B800DD57F7 /* UItextField+.swift */; };
+		235779D6218A15D900DD57F7 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779D5218A15D900DD57F7 /* UIViewController+.swift */; };
+		235779DA218A17C000DD57F7 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235779D9218A17C000DD57F7 /* LaunchImages.xcassets */; };
+		235779DB218A186500DD57F7 /* abs.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 235779D7218A16C900DD57F7 /* abs.mp4 */; };
+		235779DD218A1C3400DD57F7 /* JoinBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779DC218A1C3400DD57F7 /* JoinBio.swift */; };
+		235779DF218A1C5900DD57F7 /* ResuableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779DE218A1C5900DD57F7 /* ResuableCustomView.swift */; };
+		235779E2218A1DA500DD57F7 /* OfflineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779E1218A1DA500DD57F7 /* OfflineView.swift */; };
+		235779E4218A1E0700DD57F7 /* OfflineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779E3218A1E0700DD57F7 /* OfflineVC.swift */; };
+		235779E6218A1E2800DD57F7 /* NetworkAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779E5218A1E2800DD57F7 /* NetworkAvailable.swift */; };
+		235779E8218A1EED00DD57F7 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235779E7218A1EED00DD57F7 /* UIImage+.swift */; };
 		236B8F402124AFE9002612E7 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B8F3F2124AFE9002612E7 /* Exercise.swift */; };
 		2377DDF62152DD5F00D1737E /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377DDF52152DD5F00D1737E /* Landing.storyboard */; };
 		2377DDF82152DD9000D1737E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377DDF72152DD9000D1737E /* Date+.swift */; };
@@ -45,16 +61,14 @@
 		23A960B5214B60EA00FA0336 /* JoinHabits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A960AD214B60E900FA0336 /* JoinHabits.xib */; };
 		23A960C9214B623C00FA0336 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A960C4214B623900FA0336 /* Colors.xcassets */; };
 		23A960CA214B623C00FA0336 /* Pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A960C5214B623900FA0336 /* Pictures.xcassets */; };
-		23A960CB214B623C00FA0336 /* Videos in Resources */ = {isa = PBXBuildFile; fileRef = 23A960C6214B623B00FA0336 /* Videos */; };
 		23A960CD214B623C00FA0336 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A960C8214B623B00FA0336 /* Icons.xcassets */; };
 		23A960D6214B628700FA0336 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960CE214B628700FA0336 /* CustomLabel.swift */; };
 		23A960D7214B628700FA0336 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960CF214B628700FA0336 /* Enums.swift */; };
-		23A960D8214B628700FA0336 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D0214B628700FA0336 /* Extensions.swift */; };
 		23A960D9214B628700FA0336 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D1214B628700FA0336 /* CustomTextField.swift */; };
 		23A960DA214B628700FA0336 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D2214B628700FA0336 /* CustomView.swift */; };
 		23A960DB214B628700FA0336 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D3214B628700FA0336 /* CustomImageView.swift */; };
 		23A960DC214B628700FA0336 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D4214B628700FA0336 /* APIKeys.swift */; };
-		23A960DD214B628700FA0336 /* CustomButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D5214B628700FA0336 /* CustomButtom.swift */; };
+		23A960DD214B628700FA0336 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960D5214B628700FA0336 /* CustomButton.swift */; };
 		23A960F8214B67D000FA0336 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960EB214B67CF00FA0336 /* LoginVC.swift */; };
 		23A960F9214B67D000FA0336 /* FindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960EC214B67CF00FA0336 /* FindVC.swift */; };
 		23A960FA214B67D000FA0336 /* CreateWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A960ED214B67CF00FA0336 /* CreateWorkoutVC.swift */; };
@@ -87,8 +101,6 @@
 		23A9612D214B6E1600FA0336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9612B214B6E1600FA0336 /* Main.storyboard */; };
 		23A9612F214B70C700FA0336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9612E214B70C700FA0336 /* AppDelegate.swift */; };
 		23ADE1CC2151B39000D6609C /* FacebookLoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */; };
-		23B4F9B32163CC15002D8C3D /* abs.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B22163CC15002D8C3D /* abs.mp4 */; };
-		23B4F9B52163CCA9002D8C3D /* absCrunchesWithLegUp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B42163CCA8002D8C3D /* absCrunchesWithLegUp.mp4 */; };
 		23B4F9BD2163DF40002D8C3D /* routine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B72163DF3F002D8C3D /* routine.gif */; };
 		23B4F9BE2163DF40002D8C3D /* exercises.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B82163DF40002D8C3D /* exercises.gif */; };
 		23B4F9BF2163DF40002D8C3D /* diet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23B4F9B92163DF40002D8C3D /* diet.gif */; };
@@ -99,7 +111,6 @@
 		23B4F9C82163FCC1002D8C3D /* CollapsibleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4F9C72163FCC1002D8C3D /* CollapsibleHeader.swift */; };
 		23B4F9CA2164026B002D8C3D /* FoodSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4F9C92164026B002D8C3D /* FoodSection.swift */; };
 		800E46A990C8789D94F0BA43 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0AA389526F60A5F5C5608 /* Pods_myFit.framework */; };
-		8168699320BEF48D00294B42 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8168699220BEF48D00294B42 /* LaunchImages.xcassets */; };
 		8170BC6D20C711CA00FA928E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170BC6C20C711CA00FA928E /* BMI.swift */; };
 		90F39DEA28491FD4C2AAA0F6 /* Pods_myFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */; };
 /* End PBXBuildFile section */
@@ -112,6 +123,22 @@
 		234020372125DF8E008BFB27 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		234325B02125BB6500409C23 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		234325B22125BC4000409C23 /* DetailExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewModel.swift; sourceTree = "<group>"; };
+		235779C0218A059400DD57F7 /* video.m3u8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video.m3u8; sourceTree = "<group>"; };
+		235779C9218A13FD00DD57F7 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		235779CB218A144000DD57F7 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
+		235779CD218A145800DD57F7 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		235779CF218A147B00DD57F7 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		235779D1218A149B00DD57F7 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		235779D3218A15B800DD57F7 /* UItextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItextField+.swift"; sourceTree = "<group>"; };
+		235779D5218A15D900DD57F7 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		235779D7218A16C900DD57F7 /* abs.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abs.mp4; sourceTree = "<group>"; };
+		235779D9218A17C000DD57F7 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
+		235779DC218A1C3400DD57F7 /* JoinBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinBio.swift; sourceTree = "<group>"; };
+		235779DE218A1C5900DD57F7 /* ResuableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResuableCustomView.swift; sourceTree = "<group>"; };
+		235779E1218A1DA500DD57F7 /* OfflineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineView.swift; sourceTree = "<group>"; };
+		235779E3218A1E0700DD57F7 /* OfflineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineVC.swift; sourceTree = "<group>"; };
+		235779E5218A1E2800DD57F7 /* NetworkAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAvailable.swift; sourceTree = "<group>"; };
+		235779E7218A1EED00DD57F7 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		236B8F3F2124AFE9002612E7 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		2377DDF52152DD5F00D1737E /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
 		2377DDF72152DD9000D1737E /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
@@ -144,17 +171,14 @@
 		23A960AD214B60E900FA0336 /* JoinHabits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinHabits.xib; sourceTree = "<group>"; };
 		23A960C4214B623900FA0336 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		23A960C5214B623900FA0336 /* Pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pictures.xcassets; sourceTree = "<group>"; };
-		23A960C6214B623B00FA0336 /* Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Videos; sourceTree = "<group>"; };
-		23A960C7214B623B00FA0336 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
 		23A960C8214B623B00FA0336 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		23A960CE214B628700FA0336 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		23A960CF214B628700FA0336 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		23A960D0214B628700FA0336 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		23A960D1214B628700FA0336 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		23A960D2214B628700FA0336 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		23A960D3214B628700FA0336 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		23A960D4214B628700FA0336 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
-		23A960D5214B628700FA0336 /* CustomButtom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtom.swift; sourceTree = "<group>"; };
+		23A960D5214B628700FA0336 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		23A960EB214B67CF00FA0336 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		23A960EC214B67CF00FA0336 /* FindVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindVC.swift; sourceTree = "<group>"; };
 		23A960ED214B67CF00FA0336 /* CreateWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkoutVC.swift; sourceTree = "<group>"; };
@@ -188,8 +212,6 @@
 		23A9612B214B6E1600FA0336 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		23A9612E214B70C700FA0336 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginServices.swift; sourceTree = "<group>"; };
-		23B4F9B22163CC15002D8C3D /* abs.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abs.mp4; sourceTree = "<group>"; };
-		23B4F9B42163CCA8002D8C3D /* absCrunchesWithLegUp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = absCrunchesWithLegUp.mp4; sourceTree = "<group>"; };
 		23B4F9B72163DF3F002D8C3D /* routine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = routine.gif; sourceTree = "<group>"; };
 		23B4F9B82163DF40002D8C3D /* exercises.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = exercises.gif; sourceTree = "<group>"; };
 		23B4F9B92163DF40002D8C3D /* diet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diet.gif; sourceTree = "<group>"; };
@@ -201,7 +223,6 @@
 		23B4F9C92164026B002D8C3D /* FoodSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSection.swift; sourceTree = "<group>"; };
 		3649ECCD48A3614DF03BD8FE /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_myFit.framework; path = "../Debug-iphonesimulator/Pods_myFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8128C2EE209532CE0088F28D /* myFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8168699220BEF48D00294B42 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
 		8170BC6C20C711CA00FA928E /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		ADE0AA389526F60A5F5C5608 /* Pods_myFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EE77A01A0520C5CD40D94E /* Pods-myFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-myFit/Pods-myFit.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,15 +253,126 @@
 		234020362125D7A7008BFB27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				235779BF218A058000DD57F7 /* Videos */,
 				23B4F9B62163D1D9002D8C3D /* Gifs */,
-				23A960C6214B623B00FA0336 /* Videos */,
 				23A960C4214B623900FA0336 /* Colors.xcassets */,
 				23A960C8214B623B00FA0336 /* Icons.xcassets */,
-				23A960C7214B623B00FA0336 /* LaunchImages.xcassets */,
+				235779D9218A17C000DD57F7 /* LaunchImages.xcassets */,
 				23A960C5214B623900FA0336 /* Pictures.xcassets */,
-				8168699220BEF48D00294B42 /* LaunchImages.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		235779BF218A058000DD57F7 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				235779D7218A16C900DD57F7 /* abs.mp4 */,
+				235779C0218A059400DD57F7 /* video.m3u8 */,
+			);
+			name = Videos;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		235779C2218A12CF00DD57F7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				23A960F3214B67D000FA0336 /* JoinVC.swift */,
+				23A960AA214B60E900FA0336 /* Join.swift */,
+				235779DE218A1C5900DD57F7 /* ResuableCustomView.swift */,
+				235779DC218A1C3400DD57F7 /* JoinBio.swift */,
+				23A960A9214B60E900FA0336 /* JoinBio.xib */,
+				23A960AB214B60E900FA0336 /* JoinFinal.xib */,
+				23A960AD214B60E900FA0336 /* JoinHabits.xib */,
+				23A960EB214B67CF00FA0336 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		235779C3218A12E200DD57F7 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				2377DDF52152DD5F00D1737E /* Landing.storyboard */,
+				23A960F2214B67D000FA0336 /* OnboardingSlide.swift */,
+				23A960EF214B67CF00FA0336 /* LandingVC.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		235779C4218A12FD00DD57F7 /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+				23A9610F214B68CF00FA0336 /* FoodCell.swift */,
+				23B4F9C72163FCC1002D8C3D /* CollapsibleHeader.swift */,
+				23A96112214B68CF00FA0336 /* RecipeCell.swift */,
+				23A960F5214B67D000FA0336 /* DietVC.swift */,
+			);
+			path = Diet;
+			sourceTree = "<group>";
+		};
+		235779C5218A131100DD57F7 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				23A96105214B68CE00FA0336 /* BodyPartCell.swift */,
+				23A9610D214B68CF00FA0336 /* BodyPartHoldingCell.swift */,
+				23A9610E214B68CF00FA0336 /* SuggestedHoldingCell.swift */,
+				23A9610C214B68CF00FA0336 /* SuggestedCell.swift */,
+				23A96107214B68CE00FA0336 /* MyWorkoutHoldingCell.swift */,
+				23A9610B214B68CE00FA0336 /* MyWorkoutCell.swift */,
+				23A9610A214B68CE00FA0336 /* WorkoutCell.swift */,
+				23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */,
+				23A96111214B68CF00FA0336 /* ExerciseCell.swift */,
+				23A96104214B68CE00FA0336 /* ArticleHoldingCell.swift */,
+				23A96113214B68CF00FA0336 /* ArticleCell.swift */,
+				23A960F1214B67CF00FA0336 /* BodyPartVC.swift */,
+				23A960F0214B67CF00FA0336 /* WorkoutVC.swift */,
+				23A960F4214B67D000FA0336 /* ExerciseDetailVC.swift */,
+				23A960F6214B67D000FA0336 /* RoutinesVC.swift */,
+				23A960ED214B67CF00FA0336 /* CreateWorkoutVC.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		235779C6218A133600DD57F7 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				23A96108214B68CE00FA0336 /* ParkCell.swift */,
+				23A96110214B68CF00FA0336 /* GymCell.swift */,
+				23A960EC214B67CF00FA0336 /* FindVC.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		235779C7218A13B900DD57F7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				23A960EE214B67CF00FA0336 /* ChatVC.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		235779C8218A13EE00DD57F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2377DDF72152DD9000D1737E /* Date+.swift */,
+				235779C9218A13FD00DD57F7 /* String+.swift */,
+				235779CB218A144000DD57F7 /* Dictionary+.swift */,
+				235779CD218A145800DD57F7 /* UIColor+.swift */,
+				235779CF218A147B00DD57F7 /* UIView+.swift */,
+				235779D5218A15D900DD57F7 /* UIViewController+.swift */,
+				235779D3218A15B800DD57F7 /* UItextField+.swift */,
+				235779E7218A1EED00DD57F7 /* UIImage+.swift */,
+				235779D1218A149B00DD57F7 /* UIImage+Gif.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		235779E0218A1D9C00DD57F7 /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+				235779E1218A1DA500DD57F7 /* OfflineView.swift */,
+				235779E3218A1E0700DD57F7 /* OfflineVC.swift */,
+			);
+			path = Offline;
 			sourceTree = "<group>";
 		};
 		236B8F432124B436002612E7 /* ViewModels */ = {
@@ -269,13 +401,11 @@
 		23B544BD2151F21300FF921F /* Customs */ = {
 			isa = PBXGroup;
 			children = (
-				23A960D0214B628700FA0336 /* Extensions.swift */,
-				23A960D5214B628700FA0336 /* CustomButtom.swift */,
+				23A960D5214B628700FA0336 /* CustomButton.swift */,
 				23A960CE214B628700FA0336 /* CustomLabel.swift */,
 				23A960D2214B628700FA0336 /* CustomView.swift */,
 				23A960D1214B628700FA0336 /* CustomTextField.swift */,
 				23A960D3214B628700FA0336 /* CustomImageView.swift */,
-				2377DDF72152DD9000D1737E /* Date+.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -283,8 +413,6 @@
 		8128C2E5209532CE0088F28D = {
 			isa = PBXGroup;
 			children = (
-				23B4F9B42163CCA8002D8C3D /* absCrunchesWithLegUp.mp4 */,
-				23B4F9B22163CC15002D8C3D /* abs.mp4 */,
 				8128C2F0209532CE0088F28D /* myFit */,
 				8128C2EF209532CE0088F28D /* Products */,
 				856A46B0B414359B83EA3991 /* Pods */,
@@ -304,60 +432,28 @@
 			isa = PBXGroup;
 			children = (
 				8168699820BEF4E300294B42 /* Supporting */,
-				23B544BD2151F21300FF921F /* Customs */,
 				234020362125D7A7008BFB27 /* Resources */,
 				81A8F51520BF704100F62A37 /* Services */,
 				8168699720BEF4CA00294B42 /* Models */,
 				8168699620BEF4C400294B42 /* Views */,
 				236B8F432124B436002612E7 /* ViewModels */,
-				8168699520BEF4B600294B42 /* Controllers */,
 			);
 			path = myFit;
-			sourceTree = "<group>";
-		};
-		8168699520BEF4B600294B42 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				23A960F2214B67D000FA0336 /* OnboardingSlide.swift */,
-				23A960EF214B67CF00FA0336 /* LandingVC.swift */,
-				23A960EB214B67CF00FA0336 /* LoginVC.swift */,
-				23A960F3214B67D000FA0336 /* JoinVC.swift */,
-				23A960F5214B67D000FA0336 /* DietVC.swift */,
-				23A960F0214B67CF00FA0336 /* WorkoutVC.swift */,
-				23A960F1214B67CF00FA0336 /* BodyPartVC.swift */,
-				23A960F6214B67D000FA0336 /* RoutinesVC.swift */,
-				23A960F4214B67D000FA0336 /* ExerciseDetailVC.swift */,
-				23A960ED214B67CF00FA0336 /* CreateWorkoutVC.swift */,
-				23A960EC214B67CF00FA0336 /* FindVC.swift */,
-				23A960EE214B67CF00FA0336 /* ChatVC.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8168699620BEF4C400294B42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				23A960AA214B60E900FA0336 /* Join.swift */,
-				23A960A9214B60E900FA0336 /* JoinBio.xib */,
-				23A960AB214B60E900FA0336 /* JoinFinal.xib */,
-				23A960AD214B60E900FA0336 /* JoinHabits.xib */,
-				23A9610D214B68CF00FA0336 /* BodyPartHoldingCell.swift */,
-				23A96105214B68CE00FA0336 /* BodyPartCell.swift */,
-				23A96107214B68CE00FA0336 /* MyWorkoutHoldingCell.swift */,
-				23A9610B214B68CE00FA0336 /* MyWorkoutCell.swift */,
-				23A9610E214B68CF00FA0336 /* SuggestedHoldingCell.swift */,
-				23A9610C214B68CF00FA0336 /* SuggestedCell.swift */,
-				23A96104214B68CE00FA0336 /* ArticleHoldingCell.swift */,
-				23A96113214B68CF00FA0336 /* ArticleCell.swift */,
-				23A9610A214B68CE00FA0336 /* WorkoutCell.swift */,
-				23A96109214B68CE00FA0336 /* RoutineExerciseCell.swift */,
-				23A96111214B68CF00FA0336 /* ExerciseCell.swift */,
-				23A9610F214B68CF00FA0336 /* FoodCell.swift */,
-				23B4F9C72163FCC1002D8C3D /* CollapsibleHeader.swift */,
+				235779E0218A1D9C00DD57F7 /* Offline */,
+				23A9612A214B6E1600FA0336 /* LaunchScreen.storyboard */,
+				23A9612B214B6E1600FA0336 /* Main.storyboard */,
+				235779C3218A12E200DD57F7 /* Landing */,
+				235779C2218A12CF00DD57F7 /* Login */,
+				235779C5218A131100DD57F7 /* Workout */,
+				235779C4218A12FD00DD57F7 /* Diet */,
+				235779C6218A133600DD57F7 /* Find */,
+				235779C7218A13B900DD57F7 /* Chat */,
 				23A96106214B68CE00FA0336 /* HeaderCell.swift */,
-				23A96112214B68CF00FA0336 /* RecipeCell.swift */,
-				23A96108214B68CE00FA0336 /* ParkCell.swift */,
-				23A96110214B68CF00FA0336 /* GymCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -391,11 +487,10 @@
 			children = (
 				23A96124214B6A2400FA0336 /* Info.plist */,
 				23A9612E214B70C700FA0336 /* AppDelegate.swift */,
-				23A9612A214B6E1600FA0336 /* LaunchScreen.storyboard */,
-				2377DDF52152DD5F00D1737E /* Landing.storyboard */,
-				23A9612B214B6E1600FA0336 /* Main.storyboard */,
 				23A960D4214B628700FA0336 /* APIKeys.swift */,
 				23A960CF214B628700FA0336 /* Enums.swift */,
+				23B544BD2151F21300FF921F /* Customs */,
+				235779C8218A13EE00DD57F7 /* Extensions */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -403,6 +498,10 @@
 		81A8F51520BF704100F62A37 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				23A9608F214B60A500FA0336 /* UserPreferenceService.swift */,
+				23A96094214B60A500FA0336 /* FileManagerService.swift */,
+				23A9608E214B60A500FA0336 /* DateFormatterService.swift */,
+				23A96093214B60A500FA0336 /* ImageService.swift */,
 				23A96095214B60A500FA0336 /* FoodAPIService.swift */,
 				23A96097214B60A600FA0336 /* USDAFoodAPIService.swift */,
 				23A96098214B60A600FA0336 /* RecipeAPIService.swift */,
@@ -411,12 +510,9 @@
 				23A96099214B60A600FA0336 /* YelpEventAPIService.swift */,
 				23A96092214B60A500FA0336 /* BusinessAPIService.swift */,
 				23A96096214B60A600FA0336 /* ArticlesAPIService.swift */,
-				23A9608E214B60A500FA0336 /* DateFormatterService.swift */,
 				23A96091214B60A500FA0336 /* LocationService.swift */,
-				23A9608F214B60A500FA0336 /* UserPreferenceService.swift */,
-				23A96094214B60A500FA0336 /* FileManagerService.swift */,
-				23A96093214B60A500FA0336 /* ImageService.swift */,
 				23ADE1CB2151B39000D6609C /* FacebookLoginServices.swift */,
+				235779E5218A1E2800DD57F7 /* NetworkAvailable.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -491,14 +587,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B4F9B52163CCA9002D8C3D /* absCrunchesWithLegUp.mp4 in Resources */,
-				23B4F9B32163CC15002D8C3D /* abs.mp4 in Resources */,
+				235779DB218A186500DD57F7 /* abs.mp4 in Resources */,
 				23B4F9C22163DF40002D8C3D /* find.gif in Resources */,
 				23B4F9BF2163DF40002D8C3D /* diet.gif in Resources */,
-				23A960CB214B623C00FA0336 /* Videos in Resources */,
 				23A960B1214B60EA00FA0336 /* JoinBio.xib in Resources */,
 				23A960C9214B623C00FA0336 /* Colors.xcassets in Resources */,
 				23B4F9C12163DF40002D8C3D /* workout.gif in Resources */,
+				235779C1218A059400DD57F7 /* video.m3u8 in Resources */,
 				23A960B3214B60EA00FA0336 /* JoinFinal.xib in Resources */,
 				23A9612D214B6E1600FA0336 /* Main.storyboard in Resources */,
 				23B4F9BE2163DF40002D8C3D /* exercises.gif in Resources */,
@@ -508,8 +603,8 @@
 				23B4F9C02163DF40002D8C3D /* login.gif in Resources */,
 				23A960B5214B60EA00FA0336 /* JoinHabits.xib in Resources */,
 				23A960CA214B623C00FA0336 /* Pictures.xcassets in Resources */,
+				235779DA218A17C000DD57F7 /* LaunchImages.xcassets in Resources */,
 				23A960CD214B623C00FA0336 /* Icons.xcassets in Resources */,
-				8168699320BEF48D00294B42 /* LaunchImages.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,18 +619,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-myFit/Pods-myFit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,34 +675,40 @@
 				23A960DA214B628700FA0336 /* CustomView.swift in Sources */,
 				8170BC6D20C711CA00FA928E /* BMI.swift in Sources */,
 				230E7922212C3E1E00C07D25 /* USDA_FoodReportV1.swift in Sources */,
+				235779DD218A1C3400DD57F7 /* JoinBio.swift in Sources */,
 				23A9611C214B68D000FA0336 /* SuggestedCell.swift in Sources */,
 				23B4F9C42163F2DB002D8C3D /* USDA_FoodReportV2.swift in Sources */,
 				23A960DB214B628700FA0336 /* CustomImageView.swift in Sources */,
 				234325B12125BB6500409C23 /* ExerciseViewModel.swift in Sources */,
+				235779CC218A144000DD57F7 /* Dictionary+.swift in Sources */,
 				23A960FB214B67D000FA0336 /* ChatVC.swift in Sources */,
 				234020382125DF8E008BFB27 /* WorkoutViewModel.swift in Sources */,
 				23A9609E214B60A600FA0336 /* LocationService.swift in Sources */,
 				23A96123214B68D000FA0336 /* ArticleCell.swift in Sources */,
 				23A96119214B68D000FA0336 /* RoutineExerciseCell.swift in Sources */,
+				235779D2218A149B00DD57F7 /* UIImage+Gif.swift in Sources */,
 				23A96084214B604E00FA0336 /* Recipe.swift in Sources */,
 				23A96100214B67D000FA0336 /* JoinVC.swift in Sources */,
 				23A960FC214B67D000FA0336 /* LandingVC.swift in Sources */,
 				23A960B2214B60EA00FA0336 /* Join.swift in Sources */,
 				23A960A5214B60A600FA0336 /* RecipeAPIService.swift in Sources */,
-				23A960D8214B628700FA0336 /* Extensions.swift in Sources */,
 				23A9611E214B68D000FA0336 /* SuggestedHoldingCell.swift in Sources */,
 				23A96089214B604E00FA0336 /* YelpEvent.swift in Sources */,
 				23A96115214B68D000FA0336 /* BodyPartCell.swift in Sources */,
+				235779E8218A1EED00DD57F7 /* UIImage+.swift in Sources */,
 				23A96121214B68D000FA0336 /* ExerciseCell.swift in Sources */,
 				23A9608B214B604E00FA0336 /* YelpBusiness.swift in Sources */,
 				23A96087214B604E00FA0336 /* MapAnnotation.swift in Sources */,
 				23A960A1214B60A600FA0336 /* FileManagerService.swift in Sources */,
 				23A9611A214B68D000FA0336 /* WorkoutCell.swift in Sources */,
+				235779E4218A1E0700DD57F7 /* OfflineVC.swift in Sources */,
 				23A96116214B68D000FA0336 /* HeaderCell.swift in Sources */,
 				23A96101214B67D000FA0336 /* ExerciseDetailVC.swift in Sources */,
 				23A960F8214B67D000FA0336 /* LoginVC.swift in Sources */,
+				235779D0218A147B00DD57F7 /* UIView+.swift in Sources */,
 				23A960A0214B60A600FA0336 /* ImageService.swift in Sources */,
 				23A96086214B604E00FA0336 /* Food.swift in Sources */,
+				235779CA218A13FD00DD57F7 /* String+.swift in Sources */,
 				23A960FA214B67D000FA0336 /* CreateWorkoutVC.swift in Sources */,
 				23A9611B214B68D000FA0336 /* MyWorkoutCell.swift in Sources */,
 				23A960F9214B67D000FA0336 /* FindVC.swift in Sources */,
@@ -613,23 +718,29 @@
 				23A9608A214B604E00FA0336 /* ExerciseList.swift in Sources */,
 				23A960D9214B628700FA0336 /* CustomTextField.swift in Sources */,
 				23ADE1CC2151B39000D6609C /* FacebookLoginServices.swift in Sources */,
+				235779CE218A145800DD57F7 /* UIColor+.swift in Sources */,
 				23A960FD214B67D000FA0336 /* WorkoutVC.swift in Sources */,
 				23A96122214B68D000FA0336 /* RecipeCell.swift in Sources */,
 				234325B32125BC4000409C23 /* DetailExerciseViewModel.swift in Sources */,
+				235779E6218A1E2800DD57F7 /* NetworkAvailable.swift in Sources */,
 				236B8F402124AFE9002612E7 /* Exercise.swift in Sources */,
 				23A960DC214B628700FA0336 /* APIKeys.swift in Sources */,
 				23A9609B214B60A600FA0336 /* DateFormatterService.swift in Sources */,
 				23A9608C214B604E00FA0336 /* Article.swift in Sources */,
 				23A960FE214B67D000FA0336 /* BodyPartVC.swift in Sources */,
+				235779D6218A15D900DD57F7 /* UIViewController+.swift in Sources */,
 				230E7924212C409500C07D25 /* USDA_FoodSearch.swift in Sources */,
 				23B4F9C82163FCC1002D8C3D /* CollapsibleHeader.swift in Sources */,
 				23A9611D214B68D000FA0336 /* BodyPartHoldingCell.swift in Sources */,
 				23A96102214B67D000FA0336 /* DietVC.swift in Sources */,
+				235779DF218A1C5900DD57F7 /* ResuableCustomView.swift in Sources */,
+				235779D4218A15B800DD57F7 /* UItextField+.swift in Sources */,
 				23A96118214B68D000FA0336 /* ParkCell.swift in Sources */,
 				23A9609D214B60A600FA0336 /* EBEventAPIService.swift in Sources */,
 				23A96114214B68D000FA0336 /* ArticleHoldingCell.swift in Sources */,
 				23B4F9CA2164026B002D8C3D /* FoodSection.swift in Sources */,
 				23A9611F214B68D000FA0336 /* FoodCell.swift in Sources */,
+				235779E2218A1DA500DD57F7 /* OfflineView.swift in Sources */,
 				2377DDF82152DD9000D1737E /* Date+.swift in Sources */,
 				23A96120214B68D000FA0336 /* GymCell.swift in Sources */,
 				23A960A4214B60A600FA0336 /* USDAFoodAPIService.swift in Sources */,
@@ -640,7 +751,7 @@
 				23A96088214B604E00FA0336 /* EBEvent.swift in Sources */,
 				23A960D7214B628700FA0336 /* Enums.swift in Sources */,
 				23A9609C214B60A600FA0336 /* UserPreferenceService.swift in Sources */,
-				23A960DD214B628700FA0336 /* CustomButtom.swift in Sources */,
+				23A960DD214B628700FA0336 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,8 @@
 
 import Foundation
 
-
 struct NewsAPIJSON: Codable {
-    var totalResults: Int //4941
+    var totalResults: Int
     var articles: [Article]
 }
 

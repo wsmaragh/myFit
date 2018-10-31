@@ -14,7 +14,6 @@
 
 import Foundation
 
-
 struct Routine: Codable {
     
     var name: String = "Routine"
@@ -33,7 +32,6 @@ struct Routine: Codable {
     }
     
     mutating func deleteExercise(deleteExercise exercise: Exercise){
-        
         //check if exercises contains exercise
         //get the index of the exercise and delete
         //update duration

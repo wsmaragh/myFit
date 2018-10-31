@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 enum SectionsForFood: String {
     case Breakfast
     case Lunch

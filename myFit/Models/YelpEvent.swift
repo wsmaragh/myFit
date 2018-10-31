@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct YelpEventJSON: Codable {
     var events: [YelpEvent]
     var total: Int
